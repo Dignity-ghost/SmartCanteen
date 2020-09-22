@@ -13,10 +13,10 @@ void main()
 	{
 		LED1 = 0;
 		LED2 = 1;
-		Delay_ms(500);
+		Delay_ms(2000);
 		LED1 = 1;
 		LED2 = 0;
-		Delay_ms(500);
+		Delay_ms(2000);
 
 		
 	}
