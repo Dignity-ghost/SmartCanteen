@@ -27,7 +27,7 @@ void delay1(unsigned int z)
 void main( )
 {    
      unsigned char status,i;
-	  unsigned int temp;
+	   unsigned int temp;
      InitializeSystem( );
      PcdReset();
      PcdAntennaOff(); 
