@@ -1,6 +1,7 @@
 module ad(
     clk_50, rst_n,
-    dout, pd_sck
+    dout, pd_sck,
+    value_last
 );
 
 input               clk_50, rst_n;
@@ -50,6 +51,6 @@ always @( posedge clk_50 or negedge rst_n ) begin
     end
 end
 
-
+//assign  value_last_wire = value_last;
 
 endmodule

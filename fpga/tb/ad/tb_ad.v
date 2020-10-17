@@ -1,5 +1,5 @@
 `timescale  1us/1ps
-module tb_ad()
+module tb_ad();
 
 reg     clk, rst_n;
 reg     dout;
@@ -22,10 +22,9 @@ always #cp_h clk = ~clk;
 
 task test(); begin
     trans(24'd1000);
-    #5
     trans(24'd5219);
     trans(24'd62);
-end
+end endtask
 
 task trans(input [23:0] data); begin
     dout = 1'b0;
@@ -54,9 +53,17 @@ task trans(input [23:0] data); begin
     @(posedge pd_sck) #0.1 dout = data[2];
     @(posedge pd_sck) #0.1 dout = data[1];
     @(posedge pd_sck) #0.1 dout = data[0];
-    #5
-end
+    @(posedge pd_sck) #0.1 dout = 1'b1;
+    #50;
+end endtask
 
+ad dut(
+    .clk_50(clk),
+    .rst_n(rst_n),
+    .dout(dout),
+    .pd_sck(pd_sck),
+    .value_last()
+);
 
 
 
