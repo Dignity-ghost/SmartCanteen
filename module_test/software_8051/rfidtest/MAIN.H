@@ -1,11 +1,11 @@
 //////////////////////////////////
 //端口定义
 
-sbit     MF522_SDA  = P2^7 ;		//SDA
-sbit     MF522_SCK  = P2^6;         //SCK
-sbit     MF522_MOSI = P2^5;         //MOSI
-sbit     MF522_MISO = P2^4;         //MISO
-sbit     MF522_RST  = P2^3;         //RST
+sbit     MF522_SDA  = P1^7;		//SDA
+sbit     MF522_SCK  = P1^6;         //SCK
+sbit     MF522_MOSI = P1^5;         //MOSI
+sbit     MF522_MISO = P1^4;         //MISO
+sbit     MF522_RST  = P1^1;         //RST
 //指示灯
 sbit     LED_GREEN  = P3^0;  
 //蜂鸣器引脚定义

@@ -1,4 +1,6 @@
 #include "uart.h"
+#include <stdio.h>
+#include <reg52.h>
 
 //unsigned char RX_Buffer[30];
 unsigned char Num = 0;
@@ -42,9 +44,19 @@ void Send_ASCII(unsigned char c)				//·¢ËÍÒ»¸ö×Ö·û
 }
 
 
+//void Send_LongData(unsigned long d)
+//{
+//	unsigned char buf[8] = {0};
+//	buf[0] = d >> 56;
+//	buf[1] = d >> 48;
+//	buf[2] = d >> 40;
+//	buf[3] = d >> 32;
+//	buf[4] = d >> 24;
+//	buf[5] = d >> 16;
+//	buf[6] = d >> 8;
+//	buf[7] = d;
 
-
-
+//}
 
 
 

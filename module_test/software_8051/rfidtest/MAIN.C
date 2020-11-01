@@ -35,7 +35,7 @@ void main( )
      while ( 1 )
      {   
 
-
+				
          status = PcdRequest(PICC_REQALL, g_ucTempbuf);//寻卡
          if (status != MI_OK)
          {    
@@ -155,8 +155,8 @@ void InitializeSystem()
 
  	TMOD=0x21;		   //设T0为方式1，GATE=1；
 	SCON=0x50;
-	TH1=0xF4;          //波特率为2400bps
-	TL1=0xF4;
+	TH1=0xFD;          //波特率为2400bps
+	TL1=0xFD;
 	TH0=0;
 	TL0=0; 
 	TR0=1;  

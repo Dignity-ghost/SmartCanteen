@@ -6,8 +6,8 @@
 #include <intrins.h>
 
 //IO设置
-sbit HX711_DOUT=P2^1; 
-sbit HX711_SCK=P2^0; 
+sbit HX711_DOUT=P3^6; 
+sbit HX711_SCK=P3^5; 
 
 //函数或者变量声明
 extern void Delay__hx711_us(void);

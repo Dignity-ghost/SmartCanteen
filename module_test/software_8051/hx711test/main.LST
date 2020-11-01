@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   MAIN                                                              10/02/2020 22:56:06 PAGE 1   
+C51 COMPILER V9.60.0.0   MAIN                                                              10/30/2020 21:40:31 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
@@ -15,148 +15,165 @@ line level    source
    6          #include "HX711.h"
    7          #include "uart.h"
    8          #include "LCD1602.h"
-   9          
-  10          unsigned long HX711_Buffer = 0;
-  11          unsigned long Weight_Maopi = 0;
-  12          long Weight_Shiwu = 0;
+   9          #include <stdio.h>
+  10          #include <reg52.h>
+  11          #include  <STDIO.H>
+  12          #include <string.h>
   13          
-  14          unsigned char flag = 0;
-  15          bit Flag_ERROR = 0;
-  16          sbit speak= P1^7;
+  14          unsigned long HX711_Buffer = 0;
+  15          unsigned long Weight_Maopi = 0;
+  16          long Weight_Shiwu = 0;
   17          
-  18          //校准参数
-  19          //因为不同的传感器特性曲线不是很一致，因此，每一个传感器需要矫正这里这个参数才能使测量值很准确。
-  20          //当发现测试出来的重量偏大时，增加该数值。
-  21          //如果测试出来的重量偏小时，减小改数值。
-  22          //该值可以为小数
-  23          #define GapValue 379.5
-  24          
-  25          
-  26          //****************************************************
-  27          //主函数
-  28          //****************************************************
-  29          void main()
-  30          {
-  31   1          Uart_Init();
-  32   1          Send_Word("Welcome to use!\n");
-  33   1          Send_Word("Made by Beetle Electronic Technology!\n");
-  34   1        
-  35   1        Init_LCD1602();
-  36   1        LCD1602_write_com(0x80);
-  37   1        LCD1602_write_word("Welcome to use!");
-  38   1        Delay_ms(1000);    //延时,等待传感器稳定
-  39   1      
-  40   1        Get_Maopi();        //称毛皮重量
-  41   1        
-  42   1        while(1)
-  43   1        {
-  44   2          EA = 0;
-  45   2          Get_Weight();     //称重
-  46   2          EA = 1;
-  47   2      
-  48   2          Scan_Key();
-  49   2      
-  50   2          //显示当前重量
-  51   2          if( Flag_ERROR == 1)
-  52   2          {
-  53   3                  Send_Word("ERROR\n");
-  54   3            
-  55   3            LCD1602_write_com(0x80+0x40);
-C51 COMPILER V9.60.0.0   MAIN                                                              10/02/2020 22:56:06 PAGE 2   
+  18          unsigned char flag = 0;
+  19          bit Flag_ERROR = 0;
+  20          sbit speak= P1^7;
+  21          
+  22          unsigned long test = 1;
+  23          
+  24          //校准参数
+  25          //因为不同的传感器特性曲线不是很一致，因此，每一个传感器需要矫正这里这个参数才能使测量值很准确。
+  26          //当发现测试出来的重量偏大时，增加该数值。
+  27          //如果测试出来的重量偏小时，减小改数值。
+  28          //该值可以为小数
+  29          #define GapValue 430
+  30          
+  31          
+  32          //****************************************************
+  33          //主函数
+  34          //****************************************************
+  35          void main()
+  36          {
+  37   1          Uart_Init();
+  38   1          Send_Word("Welcome to use!\n");
+  39   1          Send_Word("Made by Beetle Electronic Technology!\n");
+  40   1          
+  41   1        Init_LCD1602();
+  42   1        LCD1602_write_com(0x80);
+  43   1        LCD1602_write_word("Welcome to use!");
+  44   1        Delay_ms(1000);    //延时,等待传感器稳定
+  45   1      
+  46   1        Get_Maopi();        //称毛皮重量
+  47   1        
+  48   1        while(1)
+  49   1        {
+  50   2          EA = 0;
+  51   2          Get_Weight();     //称重
+  52   2          EA = 1;
+  53   2      
+  54   2          Scan_Key();
+  55   2      
+C51 COMPILER V9.60.0.0   MAIN                                                              10/30/2020 21:40:31 PAGE 2   
 
-  56   3            LCD1602_write_word("ERROR ");
-  57   3            speak=0;
-  58   3          }   
-  59   2          else
-  60   2          {         
-  61   3                  speak=1;
-  62   3                  Send_ASCII(Weight_Shiwu/1000 + 0X30);
-  63   3                  Send_ASCII(Weight_Shiwu%1000/100 + 0X30);
-  64   3                  Send_ASCII(Weight_Shiwu%100/10 + 0X30);
-  65   3                  Send_ASCII(Weight_Shiwu%10 + 0X30);
-  66   3                  Send_Word(" g\n");
-  67   3            
-  68   3            LCD1602_write_com(0x80+0x40);
-  69   3            LCD1602_write_data(Weight_Shiwu/1000 + 0X30);
-  70   3                  LCD1602_write_data(Weight_Shiwu%1000/100 + 0X30);
-  71   3                  LCD1602_write_data(Weight_Shiwu%100/10 + 0X30);
-  72   3                  LCD1602_write_data(Weight_Shiwu%10 + 0X30);
-  73   3            LCD1602_write_word(" g");
-  74   3          }
-  75   2          
-  76   2        }
-  77   1      }
-  78          
-  79          //扫描按键
-  80          void Scan_Key()
-  81          {
-  82   1        if(KEY1 == 0)
-  83   1        {
-  84   2          Delay_ms(5);
-  85   2          if(KEY1 == 0)
-  86   2          {
-  87   3            while(KEY1 == 0);
-  88   3            Get_Maopi();      //去皮
-  89   3          } 
-  90   2        }
-  91   1      }
-  92          
-  93          //****************************************************
-  94          //称重
-  95          //****************************************************
-  96          void Get_Weight()
-  97          {
-  98   1        Weight_Shiwu = HX711_Read();
-  99   1        Weight_Shiwu = Weight_Shiwu - Weight_Maopi;   //获取净重
- 100   1        if(Weight_Shiwu > 0)      
- 101   1        { 
- 102   2          Weight_Shiwu = (unsigned int)((float)Weight_Shiwu/GapValue);  //计算实物的实际重量
- 103   2                                          
- 104   2                                          
- 105   2          if(Weight_Shiwu > 5000)   //超重报警
- 106   2          {
- 107   3            Flag_ERROR = 1; 
- 108   3          }
- 109   2          else
- 110   2          {
- 111   3            Flag_ERROR = 0;
- 112   3          }
- 113   2        }
- 114   1        else
- 115   1        {
- 116   2          Weight_Shiwu = 0;
- 117   2        //  Flag_ERROR = 1;       //负重报警
-C51 COMPILER V9.60.0.0   MAIN                                                              10/02/2020 22:56:06 PAGE 3   
+  56   2          //显示当前重量
+  57   2          if( Flag_ERROR == 1)
+  58   2          {
+  59   3                  Send_Word("ERROR\n");
+  60   3            
+  61   3            LCD1602_write_com(0x80+0x40);
+  62   3            LCD1602_write_word("ERROR ");
+  63   3            speak=0;
+  64   3          }   
+  65   2          else
+  66   2          {         
+  67   3                  speak=1;
+  68   3                  Send_ASCII(Weight_Shiwu/1000 + 0X30);
+  69   3                  Send_ASCII(Weight_Shiwu%1000/100 + 0X30);
+  70   3                  Send_ASCII(Weight_Shiwu%100/10 + 0X30);
+  71   3                  Send_ASCII(Weight_Shiwu%10 + 0X30);
+  72   3                  Send_Word(" g\n");
+  73   3            
+  74   3                  Send_ASCII(Weight_Maopi/1000000000 + 0X30);
+  75   3                  Send_ASCII(Weight_Maopi%100000000/10000000 + 0X30);
+  76   3                  Send_ASCII(Weight_Maopi%10000000/1000000 + 0X30);
+  77   3                  Send_ASCII(Weight_Maopi%1000000/100000 + 0X30);
+  78   3                  Send_ASCII(Weight_Maopi%100000/10000 + 0X30);
+  79   3                  Send_ASCII(Weight_Maopi%10000/1000 + 0X30);
+  80   3                  Send_ASCII(Weight_Maopi%1000/100 + 0X30);
+  81   3                  Send_ASCII(Weight_Maopi%100/10 + 0X30);
+  82   3                  Send_ASCII(Weight_Maopi%10 + 0X30);
+  83   3                  Send_Word(" maopi\n");
+  84   3            
+  85   3            LCD1602_write_com(0x80+0x40);
+  86   3            LCD1602_write_data(Weight_Shiwu/1000 + 0X30);
+  87   3                  LCD1602_write_data(Weight_Shiwu%1000/100 + 0X30);
+  88   3                  LCD1602_write_data(Weight_Shiwu%100/10 + 0X30);
+  89   3                  LCD1602_write_data(Weight_Shiwu%10 + 0X30);
+  90   3            LCD1602_write_word(" g");
+  91   3          }
+  92   2          
+  93   2        }
+  94   1      }
+  95          
+  96          //扫描按键
+  97          void Scan_Key()
+  98          {
+  99   1        if(KEY1 == 0)
+ 100   1        {
+ 101   2          Delay_ms(5);
+ 102   2          if(KEY1 == 0)
+ 103   2          {
+ 104   3            while(KEY1 == 0);
+ 105   3            Get_Maopi();      //去皮
+ 106   3          } 
+ 107   2        }
+ 108   1      }
+ 109          
+ 110          //****************************************************
+ 111          //称重
+ 112          //****************************************************
+ 113          void Get_Weight()
+ 114          {
+ 115   1        Weight_Shiwu = HX711_Read();
+ 116   1        Weight_Shiwu = Weight_Shiwu - Weight_Maopi;   //获取净重
+ 117   1        if(Weight_Shiwu > 0)      
+C51 COMPILER V9.60.0.0   MAIN                                                              10/30/2020 21:40:31 PAGE 3   
 
- 118   2        }
- 119   1        
- 120   1      }
- 121          
- 122          //****************************************************
- 123          //获取毛皮重量
- 124          //****************************************************
- 125          void Get_Maopi()
- 126          {
- 127   1        Weight_Maopi = HX711_Read();  
- 128   1      } 
- 129          
- 130          //****************************************************
- 131          //MS延时函数(12M晶振下测试)
- 132          //****************************************************
- 133          void Delay_ms(unsigned int n)
- 134          {
- 135   1        unsigned int  i,j;
- 136   1        for(i=0;i<n;i++)
- 137   1          for(j=0;j<123;j++);
- 138   1      }
+ 118   1        { 
+ 119   2          Weight_Shiwu = (unsigned int)((float)Weight_Shiwu/GapValue);  //计算实物的实际重量
+ 120   2                                          
+ 121   2                                          
+ 122   2          if(Weight_Shiwu > 5000)   //超重报警
+ 123   2          {
+ 124   3            Flag_ERROR = 1; 
+ 125   3          }
+ 126   2          else
+ 127   2          {
+ 128   3            Flag_ERROR = 0;
+ 129   3          }
+ 130   2        }
+ 131   1        else
+ 132   1        {
+ 133   2          Weight_Shiwu = 0;
+ 134   2        //  Flag_ERROR = 1;       //负重报警
+ 135   2        }
+ 136   1        
+ 137   1      }
+ 138          
+ 139          //****************************************************
+ 140          //获取毛皮重量
+ 141          //****************************************************
+ 142          void Get_Maopi()
+ 143          {
+ 144   1        Weight_Maopi = HX711_Read();  
+ 145   1      } 
+ 146          
+ 147          //****************************************************
+ 148          //MS延时函数(12M晶振下测试)
+ 149          //****************************************************
+ 150          void Delay_ms(unsigned int n)
+ 151          {
+ 152   1        unsigned int  i,j;
+ 153   1        for(i=0;i<n;i++)
+ 154   1          for(j=0;j<123;j++);
+ 155   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    570    ----
-   CONSTANT SIZE    =     93    ----
+   CODE SIZE        =    933    ----
+   CONSTANT SIZE    =    101    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =     13    ----
+   DATA SIZE        =     17    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =      1    ----
 END OF MODULE INFORMATION.

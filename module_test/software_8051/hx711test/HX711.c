@@ -1,5 +1,5 @@
 #include "HX711.h"
-
+#include "uart.h"
 
 //****************************************************
 //延时函数
@@ -17,6 +17,7 @@ unsigned long HX711_Read(void)	//增益128
 {
 	unsigned long count; 
 	unsigned char i; 
+	
   	HX711_DOUT=1; 
 	Delay__hx711_us();
   	HX711_SCK=0; 
@@ -35,7 +36,22 @@ unsigned long HX711_Read(void)	//增益128
  	HX711_SCK=1; 
     count=count^0x800000;//第25个脉冲下降沿来时，转换数据
 	Delay__hx711_us();
-	HX711_SCK=0;  
+	HX711_SCK=0; 
+	
+	//Send_Word("read test\n");
+	Send_ASCII(count/1000000000 + 0X30);
+	Send_ASCII(count%100000000/10000000 + 0X30);
+  Send_ASCII(count%10000000/1000000 + 0X30);
+	Send_ASCII(count%1000000/100000 + 0X30);
+  Send_ASCII(count%100000/10000 + 0X30);
+  Send_ASCII(count%10000/1000 + 0X30);
+  Send_ASCII(count%1000/100 + 0X30);
+  Send_ASCII(count%100/10 + 0X30);
+  Send_ASCII(count%10 + 0X30);
+  Send_Word(" end\n");
+	
+	
+	
 	return(count);
 }
 
