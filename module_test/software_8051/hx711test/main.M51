@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/30/2020  21:40:32  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/01/2020  21:50:40  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  main (MAIN)
             CODE    0990H     0020H     UNIT         ?PR?_LCD1602_DELAY_MS?LCD1602
             CODE    09B0H     0018H     UNIT         ?PR?UART_INIT?UART
             CODE    09C8H     0018H     UNIT         ?PR?INIT_LCD1602?LCD1602
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 2
 
 
             CODE    09E0H     0015H     UNIT         ?PR?_LCD1602_WRITE_COM?LCD1602
@@ -119,7 +119,7 @@ SEGMENT                                   DATA_GROUP
   +--> ?CO?HX711
   +--> ?PR?_SEND_WORD?UART
 
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 3
 
 
 ?PR?GET_WEIGHT?MAIN                     -----    -----
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   C:0038H         LINE#         52
   C:003AH         LINE#         54
   C:003DH         LINE#         57
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 4
 
 
   C:0040H         LINE#         58
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   C:082EH         LINE#         122
   C:0842H         LINE#         123
   C:0842H         LINE#         124
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 5
 
 
   C:0844H         LINE#         125
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   D:0019H         SYMBOL        count
   D:0003H         SYMBOL        i
   -------         ENDDO         
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 6
 
 
   C:0568H         LINE#         16
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   D:008DH         PUBLIC        TH1
   D:008BH         PUBLIC        TL1
   C:0A2AH         PUBLIC        _Send_ASCII
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 7
 
 
   B:0088H.6       PUBLIC        TR1
@@ -419,7 +419,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   B:00A0H.5       PUBLIC        LCD1602_RS
   B:00A0H.6       PUBLIC        LCD1602_RW
   C:09F5H         PUBLIC        _LCD1602_write_data
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 8
 
 
   D:0098H         PUBLIC        SCON
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  main (MAIN)
   -------         PROC          INIT_LCD1602
   C:09C8H         LINE#         51
   C:09C8H         LINE#         52
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/30/2020  21:40:32  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/01/2020  21:50:40  PAGE 9
 
 
   C:09C8H         LINE#         53
