@@ -31,11 +31,11 @@ always @( posedge clk_50 or negedge rst_n ) begin
     end
 end
 
-assign  trans_en        = ( ~&current_state[10:9] ) & ( &current_state[5:0] ) ;
+assign  trans_en        = ( ~&current_state[10:9] ) & ( &current_state[5:0] ) ; //有效时应该传输1bit
 //assign  trans_finish    = &current_state[10:9] ; 
-assign  trans_stop      = current_state[10:6] == 5'd25 ;
-assign  trans_pause     = ( ~|current_state ) & dout;
-assign  next_state      = ( trans_stop | trans_pause ) ? 24'h0 : ( current_state + 1'b1 ) ;
+assign  trans_stop      = current_state[10:6] == 5'd25 ;    //有效时一轮传输完成，即将进入idle状态
+assign  trans_pause     = ( ~|current_state ) & dout;   //有效时为idle状态
+assign  next_state      = ( trans_stop | trans_pause ) ? 24'h0 : ( current_state + 1'b1 ) ;     //状态机/计数器，只有非idle状态才会自增，否则保持为0
 assign  pd_sck          = current_state[5];
 
 always @( posedge clk_50 or negedge rst_n ) begin
