@@ -1,0 +1,1793 @@
+21:06:48 **** Build of project adc_uart_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/adc_controler_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/adc_controler_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/adc_controler_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/adc_controler_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling adc_controler..."
+adc_controler_selftest.c: In function 'ADC_CONTROLER_Reg_SelfTest':
+adc_controler_selftest.c:52:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ADC_CONTROLER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                              ^~
+adc_controler_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+21:07:05 **** Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19352	   1144	  22568	  43064	   a838	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:11:42 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:5: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     Xil_In32((BaseAddress) + (RegOffset))
+     ^~~~~~~~
+../src/helloworld.c:59:15: error: 'BaseAddress' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^~~~~~~~~~~
+../src/helloworld.c:59:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:59:31: error: 'RegOffset' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/helloworld.c:61:5: error: expected ';' before 'cleanup_platform'
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:11:50 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:60:5: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     Xil_In32((BaseAddress) + (RegOffset));
+     ^~~~~~~~
+../src/helloworld.c:60:15: error: 'BaseAddress' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset));
+               ^~~~~~~~~~~
+../src/helloworld.c:60:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:31: error: 'RegOffset' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset));
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:13:26 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:21: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+     printf("Origin:%x\n\r");
+                    ~^
+../src/helloworld.c:59:21: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+     printf("Origin:%x\n\r");
+                    ~^
+../src/helloworld.c:60:5: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     Xil_In32((BaseAddress) + (RegOffset));
+     ^~~~~~~~
+../src/helloworld.c:60:15: error: 'BaseAddress' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset));
+               ^~~~~~~~~~~
+../src/helloworld.c:60:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:31: error: 'RegOffset' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset));
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:13:30 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:21: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+     printf("Origin:%x\n\r");
+                    ~^
+../src/helloworld.c:59:21: warning: format '%x' expects a matching 'unsigned int' argument [-Wformat=]
+     printf("Gramme:%x\n\r");
+                    ~^
+../src/helloworld.c:60:5: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     Xil_In32((BaseAddress) + (RegOffset));
+     ^~~~~~~~
+../src/helloworld.c:60:15: error: 'BaseAddress' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset));
+               ^~~~~~~~~~~
+../src/helloworld.c:60:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:31: error: 'RegOffset' undeclared (first use in this function)
+     Xil_In32((BaseAddress) + (RegOffset));
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:13:48 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:28: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     printf("Origin:%x\n\r",Xil_In32((BaseAddress) + (RegOffset)));
+                            ^~~~~~~~
+../src/helloworld.c:58:38: error: 'BaseAddress' undeclared (first use in this function)
+     printf("Origin:%x\n\r",Xil_In32((BaseAddress) + (RegOffset)));
+                                      ^~~~~~~~~~~
+../src/helloworld.c:58:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:58:54: error: 'RegOffset' undeclared (first use in this function)
+     printf("Origin:%x\n\r",Xil_In32((BaseAddress) + (RegOffset)));
+                                                      ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:14:18 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:28: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     printf("Origin:%x\n\r",Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET)));
+                            ^~~~~~~~
+../src/helloworld.c:58:38: error: 'BaseAddress' undeclared (first use in this function)
+     printf("Origin:%x\n\r",Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET)));
+                                      ^~~~~~~~~~~
+../src/helloworld.c:58:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:58:54: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     printf("Origin:%x\n\r",Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET)));
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:54: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     printf("Gramme:%d\n\r",Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)));
+                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                      ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:14:32 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:58:29: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     printf("Origin:%x\n\r", Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET)));
+                             ^~~~~~~~
+../src/helloworld.c:58:39: error: 'BaseAddress' undeclared (first use in this function)
+     printf("Origin:%x\n\r", Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET)));
+                                       ^~~~~~~~~~~
+../src/helloworld.c:58:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:58:55: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     printf("Origin:%x\n\r", Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET)));
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:55: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     printf("Gramme:%d\n\r", Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)));
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                       ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:15:30 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~
+../src/helloworld.c:59:24: error: 'BaseAddress' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                        ^~~~~~~~~~~
+../src/helloworld.c:59:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:59:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:60:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET))
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                        ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+../src/helloworld.c:61:5: error: expected ';' before 'print'
+     print("-----------------------n\r");
+     ^~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:15:42 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~
+../src/helloworld.c:59:24: error: 'BaseAddress' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                        ^~~~~~~~~~~
+../src/helloworld.c:59:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:59:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:60:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                        ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:17:42 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~
+../src/helloworld.c:59:24: error: 'BaseAddress' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                        ^~~~~~~~~~~
+../src/helloworld.c:59:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:59:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:60:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                        ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:17:45 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~
+../src/helloworld.c:59:24: error: 'BaseAddress' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                        ^~~~~~~~~~~
+../src/helloworld.c:59:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:59:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:60:40: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = Xil_In32((BaseAddress) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                        ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:19:21 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'Xil_In32' [-Wimplicit-function-declaration]
+     origin = Xil_In32((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~
+../src/helloworld.c:59:66: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = Xil_In32((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:66: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:66: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = Xil_In32((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                  ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:20:32 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'ADC_CONTROLER_mReadReg' [-Wimplicit-function-declaration]
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:80: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:80: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:61:80: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:20:36 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:59:14: warning: implicit declaration of function 'ADC_CONTROLER_mReadReg' [-Wimplicit-function-declaration]
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:80: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:59:80: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:60:80: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                                ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:22:04 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                                                      ^
+../src/helloworld.c:62:14: error: 'ADC_CONTROLER_mReadReg' undeclared (first use in this function); did you mean 'ADC_CONTROLER_Reg_SelfTest'?
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+              ADC_CONTROLER_Reg_SelfTest
+../src/helloworld.c:62:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:63:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                                                      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:22:26 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:53:10: fatal error: xli_io.h: No such file or directory
+ #include "xli_io.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:22:31 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                                                      ^
+../src/helloworld.c:63:14: error: 'ADC_CONTROLER_mReadReg' undeclared (first use in this function); did you mean 'ADC_CONTROLER_Reg_SelfTest'?
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+              ADC_CONTROLER_Reg_SelfTest
+../src/helloworld.c:63:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:64:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                                                      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:23:23 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:5: warning: 'origin' is used uninitialized in this function [-Wuninitialized]
+     printf("Origin:%x\n\r", origin);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:65:5: warning: 'gramme' is used uninitialized in this function [-Wuninitialized]
+     printf("Gramme:%d\n\r", gramme);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	   2580	  23328	  96348	  1785c	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:23:26 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                                                      ^
+../src/helloworld.c:63:14: error: 'ADC_CONTROLER_mReadReg' undeclared (first use in this function); did you mean 'ADC_CONTROLER_Reg_SelfTest'?
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+              ADC_CONTROLER_Reg_SelfTest
+../src/helloworld.c:63:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:64:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                                                      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:23:28 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:5: warning: 'origin' is used uninitialized in this function [-Wuninitialized]
+     printf("Origin:%x\n\r", origin);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:65:5: warning: 'gramme' is used uninitialized in this function [-Wuninitialized]
+     printf("Gramme:%d\n\r", gramme);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70440	   2580	  23328	  96348	  1785c	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:23:35 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                                                      ^
+../src/helloworld.c:63:14: error: 'ADC_CONTROLER_mReadReg' undeclared (first use in this function); did you mean 'ADC_CONTROLER_Reg_SelfTest'?
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+              ADC_CONTROLER_Reg_SelfTest
+../src/helloworld.c:63:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:64:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                                                      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:24:04 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                                                      ^
+../src/helloworld.c:63:14: error: 'ADC_CONTROLER_mReadReg' undeclared (first use in this function); did you mean 'ADC_CONTROLER_Reg_SelfTest'?
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+              ADC_CONTROLER_Reg_SelfTest
+../src/helloworld.c:63:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:64:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                                                      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:24:48 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:63:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+                                                                                                                      ^
+../src/helloworld.c:63:14: error: 'ADC_CONTROLER_mReadReg' undeclared (first use in this function); did you mean 'ADC_CONTROLER_Reg_SelfTest'?
+     origin = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET));
+              ^~~~~~~~~~~~~~~~~~~~~~
+              ADC_CONTROLER_Reg_SelfTest
+../src/helloworld.c:63:14: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:64:118: error: macro "ADC_CONTROLER_mReadReg" requires 2 arguments, but only 1 given
+     gramme = ADC_CONTROLER_mReadReg((XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR) + (ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+                                                                                                                      ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:26:48 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70568	   2580	  23344	  96492	  178ec	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:27:32 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70568	   2580	  23344	  96492	  178ec	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:28:36 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70568	   2580	  23344	  96492	  178ec	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:29:02 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70576	   2580	  23344	  96500	  178f4	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:29:22 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70576	   2580	  23344	  96500	  178f4	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:29:32 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:6: warning: implicit declaration of function 'sleep'; did you mean 'strsep'? [-Wimplicit-function-declaration]
+      sleep(1000);
+      ^~~~~
+      strsep
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:31:29 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:5: error: expected expression before '}' token
+     }
+     ^
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:31:32 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:32:01 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:32:09 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:32:20 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:40:42 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:42:25 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:42:37 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:43:23 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:43:40 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:43:52 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:44:00 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:44:30 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:44:41 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:45:11 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70640	   2580	  23344	  96564	  17934	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:45:26 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:46:49 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:46:53 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:47:00 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:48:41 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:49:04 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:6: error: expected ';' before 'print'
+      print("-----------------------n\r");
+      ^~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:49:07 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:49:13 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:50:50 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:51:34 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:51:44 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:52:41 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:52:45 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:53:03 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:53:27 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:53:46 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:54:55 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:55:31 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:56:02 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:56:46 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:69:25: warning: unknown conversion type character ' ' in format [-Wformat=]
+      printf("Gram   : %l g\n\r", gram);
+                         ^
+../src/helloworld.c:69:13: warning: too many arguments for format [-Wformat-extra-args]
+      printf("Gram   : %l g\n\r", gram);
+             ^~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:56:53 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:57:16 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+21:57:23 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:59:35 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:66:15: error: expected expression before 'signed'
+      gram   = signed(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)) - gram_start;
+               ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+21:59:48 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:15: error: expected expression before 'signed'
+  gram_start = signed(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+               ^~~~~~
+../src/helloworld.c:66:15: error: expected expression before 'signed'
+      gram   = signed(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)) - gram_start;
+               ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:00:09 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:62:15: error: expected expression before 'signed'
+  gram_start = signed(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET));
+               ^~~~~~
+../src/helloworld.c:66:15: error: expected expression before 'signed'
+      gram   = signed int(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)) - gram_start;
+               ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:00:17 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:66:15: error: expected expression before 'signed'
+      gram   = signed int(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)) - gram_start;
+               ^~~~~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:00:22 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:66:15: error: expected expression before 'int'
+      gram   = int(ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET)) - gram_start;
+               ^~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+22:00:28 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:02:39 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:02:42 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70704	   2580	  23344	  96628	  17974	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:02:51 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:04:02 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70720	   2580	  23344	  96644	  17984	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:04:20 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:05:23 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70800	   2580	  23344	  96724	  179d4	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:05:29 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+22:06:02 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70800	   2580	  23344	  96724	  179d4	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:08:08 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70864	   2580	  23344	  96788	  17a14	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+22:08:15 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:41:42 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:42:21 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:49:12 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:53:01 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:53:16 **** Auto Build of project adc_uart_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/adc_controler_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/adc_controler_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/adc_controler_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/adc_controler_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling adc_controler..."
+adc_controler_selftest.c: In function 'ADC_CONTROLER_Reg_SelfTest':
+adc_controler_selftest.c:52:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ADC_CONTROLER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                              ^~
+adc_controler_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+23:53:29 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70864	   2580	  23344	  96788	  17a14	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+23:53:38 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70864	   2580	  23344	  96788	  17a14	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+23:53:43 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:58:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int'
+ int main()
+ ^~~
+make: *** [src/subdir.mk:26: src/helloworld.o] Error 1
+23:53:51 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70864	   2580	  23344	  96788	  17a14	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '
+23:54:02 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:55:53 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+23:57:25 **** Incremental Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:26:48 **** Auto Build of project adc_uart_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/adc_controler_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/adc_controler_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/adc_controler_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/adc_controler_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling adc_controler..."
+adc_controler_selftest.c: In function 'ADC_CONTROLER_Reg_SelfTest':
+adc_controler_selftest.c:52:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( ADC_CONTROLER_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                              ^~
+adc_controler_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+16:27:00 **** Auto Build of configuration Debug for project adc_uart ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../adc_uart_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: adc_uart.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../adc_uart_bsp/ps7_cortexa9_0/lib -o "adc_uart.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: adc_uart.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size adc_uart.elf  |tee "adc_uart.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70864	   2580	  23344	  96788	  17a14	adc_uart.elf
+'Finished building: adc_uart.elf.size'
+' '

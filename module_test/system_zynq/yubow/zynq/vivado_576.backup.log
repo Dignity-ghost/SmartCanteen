@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Nov  1 16:22:40 2020
+# Process ID: 576
+# Current directory: E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5004 E:\project\SmartCanteen\module_test\system_zynq\yubow\zynq\zynq.xpr
+# Log file: E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq/vivado.log
+# Journal file: E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq/zynq.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/jinha/Desktop/XD_Xie/zynq' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'E:/project/SmartCanteen/module_test/system_zynq/yubow/ip_repo/adc_controler_1.0', nor could it be found using path 'C:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'E:/project/SmartCanteen/module_test/system_zynq/yubow/ip_repo/adc_controler_1.0', nor could it be found using path 'C:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/yubow/ip_repo/adc_controler_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2207] Repository 'e:/project/SmartCanteen/module_test/system_zynq/yubow/ip_repo/adc_controler_1.0' already exists; ignoring attempt to add it again.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/yubow/ip_repo/adc_controler_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'test.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+test_adc_controler_0_0
+
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:08 . Memory (MB): peak = 840.648 ; gain = 203.227
+update_compile_order -fileset sources_1
+open_bd_design {E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq/zynq.srcs/sources_1/bd/test/test.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:adc_controler:1.0 - adc_controler_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Successfully read diagram <test> from BD file <E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq/zynq.srcs/sources_1/bd/test/test.bd>
+upgrade_ip [get_ips]
+WARNING: [Coretcl 2-1044] No upgrade is available for 'test_adc_controler_0_0'
+WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
+report_ip_status -name ip_status 
+set_property LOCK_UPGRADE 1 [get_bd_cells /adc_controler_0]
+WARNING: [BD 41-2028] Locking adc_controler to version 1.0. If the latest driver for the IP is not backwards compatible, software flow will assign a generic driver or no driver for this IP
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+upgrade_ip [get_ips]
+INFO: [Coretcl 2-1622] IP 'test_adc_controler_0_0' is locked by user. Skipping IP upgrade.
+WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
+report_ip_status -name ip_status 
+upgrade_ip [get_ips]
+INFO: [Coretcl 2-1622] IP 'test_adc_controler_0_0' is locked by user. Skipping IP upgrade.
+WARNING: [Coretcl 2-1042] No IP was identified for upgrade.
+save_bd_design
+Wrote  : <E:\project\SmartCanteen\module_test\system_zynq\yubow\zynq\zynq.srcs\sources_1\bd\test\test.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Sun Nov  1 22:58:11 2020] Launched synth_1...
+Run output will be captured here: E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq/zynq.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1319.941 ; gain = 0.000
+report_ip_status -name ip_status 
+open_bd_design {E:/project/SmartCanteen/module_test/system_zynq/yubow/zynq/zynq.srcs/sources_1/bd/test/test.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  1 23:04:21 2020...

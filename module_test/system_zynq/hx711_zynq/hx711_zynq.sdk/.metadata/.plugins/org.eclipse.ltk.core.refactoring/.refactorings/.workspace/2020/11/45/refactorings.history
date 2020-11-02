@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;hx711_zynq_wrapper_hw_platform_0&apos;" deleteContents="true" description="Delete resource &apos;hx711_zynq_wrapper_hw_platform_0&apos;" element1="/hx711_zynq_wrapper_hw_platform_0" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1604305421296"/>&#x0A;<refactoring comment="Delete resource &apos;hx711_zynq_wrapper_hw_platform_1&apos;" deleteContents="true" description="Delete resource &apos;hx711_zynq_wrapper_hw_platform_1&apos;" element1="/hx711_zynq_wrapper_hw_platform_1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1604305427499"/>
+</session>

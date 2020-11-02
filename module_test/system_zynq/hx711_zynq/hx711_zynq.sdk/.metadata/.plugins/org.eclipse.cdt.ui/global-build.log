@@ -1,0 +1,362 @@
+16:25:32 **** Build of project hx711_zynq_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/hx711_package_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/hx711_package_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/hx711_package_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/hx711_package_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling hx711_package..."
+hx711_package_selftest.c: In function 'HX711_PACKAGE_Reg_SelfTest':
+hx711_package_selftest.c:52:62: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( HX711_PACKAGE_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                              ^~
+hx711_package_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+16:25:45 **** Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hx711_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hx711_zynq_bsp/ps7_cortexa9_0/lib -o "hx711_zynq.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hx711_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hx711_zynq.elf  |tee "hx711_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19352	   1144	  22568	  43064	   a838	hx711_zynq.elf
+'Finished building: hx711_zynq.elf.size'
+' '
+16:25:47 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:26:08 **** Clean-only build of configuration Debug for project hx711_zynq ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  hx711_zynq.elf.size  hx711_zynq.elf
+' '
+16:26:08 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+'Finished building: ../src/hx711_zynq.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hx711_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hx711_zynq_bsp/ps7_cortexa9_0/lib -o "hx711_zynq.elf"  ./src/hx711_zynq.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hx711_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hx711_zynq.elf  |tee "hx711_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19352	   1144	  22568	  43064	   a838	hx711_zynq.elf
+'Finished building: hx711_zynq.elf.size'
+' '
+16:34:44 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+../src/hx711_zynq.c:52:10: fatal error: adc_controler.h: No such file or directory
+ #include "adc_controler.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/hx711_zynq.o] Error 1
+16:34:53 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+'Finished building: ../src/hx711_zynq.c'
+' '
+'Building target: hx711_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hx711_zynq_bsp/ps7_cortexa9_0/lib -o "hx711_zynq.elf"  ./src/hx711_zynq.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hx711_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hx711_zynq.elf  |tee "hx711_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19352	   1144	  22568	  43064	   a838	hx711_zynq.elf
+'Finished building: hx711_zynq.elf.size'
+' '
+16:35:03 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+../src/hx711_zynq.c: In function 'main':
+../src/hx711_zynq.c:63:15: warning: implicit declaration of function 'ADC_CONTROLER_mReadReg' [-Wimplicit-function-declaration]
+  gram_start = ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+               ^~~~~~~~~~~~~~~~~~~~~~
+../src/hx711_zynq.c:63:38: error: 'XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_PS7_SLCR_0_S_AXI_BASEADDR'?
+  gram_start = ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                      XPAR_PS7_SLCR_0_S_AXI_BASEADDR
+../src/hx711_zynq.c:63:38: note: each undeclared identifier is reported only once for each function it appears in
+../src/hx711_zynq.c:63:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function)
+  gram_start = ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/hx711_zynq.c:66:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET'?
+      origin = ADC_CONTROLER_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                            ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET
+make: *** [src/subdir.mk:26: src/hx711_zynq.o] Error 1
+16:36:32 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+In file included from ../src/hx711_zynq.c:52:0:
+../src/hx711_zynq.c: In function 'main':
+../src/hx711_zynq.c:63:38: error: 'XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_PS7_SLCR_0_S_AXI_BASEADDR'?
+  gram_start = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                      ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:15: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^~~~~~~~~~~
+../src/hx711_zynq.c:63:38: note: each undeclared identifier is reported only once for each function it appears in
+  gram_start = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                      ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:15: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^~~~~~~~~~~
+../src/hx711_zynq.c:63:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function)
+  gram_start = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/hx711_zynq.c:66:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET'?
+      origin = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/hx711_zynq.o] Error 1
+16:41:52 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+In file included from ../src/hx711_zynq.c:52:0:
+../src/hx711_zynq.c: In function 'main':
+../src/hx711_zynq.c:63:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function)
+  gram_start = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/hx711_zynq.c:63:76: note: each undeclared identifier is reported only once for each function it appears in
+  gram_start = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/hx711_zynq.c:66:38: error: 'XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_PS7_SLCR_0_S_AXI_BASEADDR'?
+      origin = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                      ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:15: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^~~~~~~~~~~
+../src/hx711_zynq.c:66:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET'?
+      origin = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/hx711_zynq.o] Error 1
+16:42:07 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+In file included from ../src/hx711_zynq.c:52:0:
+../src/hx711_zynq.c: In function 'main':
+../src/hx711_zynq.c:66:38: error: 'XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR' undeclared (first use in this function); did you mean 'XPAR_PS7_SLCR_0_S_AXI_BASEADDR'?
+      origin = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                      ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:15: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^~~~~~~~~~~
+../src/hx711_zynq.c:66:38: note: each undeclared identifier is reported only once for each function it appears in
+      origin = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                      ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:15: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+               ^~~~~~~~~~~
+../src/hx711_zynq.c:66:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+      origin = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/hx711_zynq.c:67:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+      gram   = HX711_PACKAGE_mReadReg(XPAR_ADC_CONTROLER_0_AXI_ADC_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/hx711_zynq.o] Error 1
+16:42:20 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+In file included from ../src/hx711_zynq.c:52:0:
+../src/hx711_zynq.c: In function 'main':
+../src/hx711_zynq.c:66:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET' undeclared (first use in this function)
+      origin = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/hx711_zynq.c:66:76: note: each undeclared identifier is reported only once for each function it appears in
+      origin = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+../src/hx711_zynq.c:67:76: error: 'ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET' undeclared (first use in this function); did you mean 'ADC_CONTROLER_AXI_adc_SLV_REG0_OFFSET'?
+      gram   = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,ADC_CONTROLER_AXI_adc_SLV_REG2_OFFSET);
+                                                                            ^
+../../hx711_zynq_bsp/ps7_cortexa9_0/include/hx711_package.h:55:31: note: in definition of macro 'HX711_PACKAGE_mReadReg'
+     Xil_In32((BaseAddress) + (RegOffset))
+                               ^~~~~~~~~
+make: *** [src/subdir.mk:26: src/hx711_zynq.o] Error 1
+16:42:36 **** Auto Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/hx711_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hx711_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hx711_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hx711_zynq.d" -MT"src/hx711_zynq.o" -o "src/hx711_zynq.o" "../src/hx711_zynq.c"
+'Finished building: ../src/hx711_zynq.c'
+' '
+'Building target: hx711_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hx711_zynq_bsp/ps7_cortexa9_0/lib -o "hx711_zynq.elf"  ./src/hx711_zynq.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hx711_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hx711_zynq.elf  |tee "hx711_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  70864	   2580	  23344	  96788	  17a14	hx711_zynq.elf
+'Finished building: hx711_zynq.elf.size'
+' '
+17:10:13 **** Incremental Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+18:54:35 **** Incremental Build of configuration Debug for project hx711_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

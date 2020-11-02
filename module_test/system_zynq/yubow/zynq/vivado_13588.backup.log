@@ -1,0 +1,152 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct 30 23:16:54 2020
+# Process ID: 13588
+# Current directory: C:/Users/jinha/Desktop/XD_Xie/zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22640 C:\Users\jinha\Desktop\XD_Xie\zynq\zynq.xpr
+# Log file: C:/Users/jinha/Desktop/XD_Xie/zynq/vivado.log
+# Journal file: C:/Users/jinha/Desktop/XD_Xie/zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 782.934 ; gain = 166.766
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.srcs/sources_1/bd/test/test.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:user:adc_controler:1.0 - adc_controler_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Successfully read diagram <test> from BD file <C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.srcs/sources_1/bd/test/test.bd>
+ipx::edit_ip_in_project -upgrade true -name adc_controler_v1_0_project -directory C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.tmp/adc_controler_v1_0_project c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/src/ad.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/hdl/adc_controler_v1_0_AXI_adc.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/hdl/adc_controler_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1262.926 ; gain = 74.441
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/component.xml' ignored by IP packager.
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Oct 30 23:39:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/runme.log
+file copy -force C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/test_wrapper.sysdef C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper.hdf
+
+launch_sdk -workspace C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk -hwspec C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk -hwspec C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+set_property PROGRAM.FILE {C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/test_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+open_bd_design {C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.srcs/sources_1/bd/test/test.bd}
+ipx::edit_ip_in_project -upgrade true -name adc_controler_v1_0_project -directory C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.tmp/adc_controler_v1_0_project c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/src/ad.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/hdl/adc_controler_v1_0_AXI_adc.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/hdl/adc_controler_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2086.578 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/component.xml' ignored by IP packager.
+set_property core_revision 4 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Oct 30 23:47:23 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/runme.log
+file copy -force C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/test_wrapper.sysdef C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper.hdf
+
+open_bd_design {C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.srcs/sources_1/bd/test/test.bd}
+ipx::edit_ip_in_project -upgrade true -name adc_controler_v1_0_project -directory C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.tmp/adc_controler_v1_0_project c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+WARNING: [IP_Flow 19-2207] Repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/src/ad.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/hdl/adc_controler_v1_0_AXI_adc.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/hdl/adc_controler_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2141.254 ; gain = 2.227
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0/component.xml' ignored by IP packager.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/jinha/Desktop/XD_Xie/ip_repo/adc_controler_1.0'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri Oct 30 23:50:55 2020] Launched impl_1...
+Run output will be captured here: C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/runme.log
+file copy -force C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.runs/impl_1/test_wrapper.sysdef C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper.hdf
+
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/201706300081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/201706300081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 30 23:58:02 2020...

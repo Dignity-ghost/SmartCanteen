@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>test_wrapper_hw_platform_0_Traces</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.linuxtools.tmf.project.nature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Traces/Run_十月-30_21-52/PS_Trace_十月-30_21-52/PS_Trace_十月-30_21-52_</name>
+			<type>1</type>
+			<location>C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+		<link>
+			<name>Traces/Run_十月-30_21-54/PS_Trace_十月-30_21-54/PS_Trace_十月-30_21-54_</name>
+			<type>1</type>
+			<location>C:/Users/jinha/Desktop/XD_Xie/zynq/zynq.sdk/test_wrapper_hw_platform_0_Traces/Traces/.bookmarks</location>
+		</link>
+	</linkedResources>
+</projectDescription>

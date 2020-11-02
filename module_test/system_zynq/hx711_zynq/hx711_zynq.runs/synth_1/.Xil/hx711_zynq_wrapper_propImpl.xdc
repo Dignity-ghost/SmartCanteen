@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/constrs_1/new/hx711_zynq.xdc rfile:../../../hx711_zynq.srcs/constrs_1/new/hx711_zynq.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N18 [get_ports pd_sck_0]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P19 [get_ports dout_0]

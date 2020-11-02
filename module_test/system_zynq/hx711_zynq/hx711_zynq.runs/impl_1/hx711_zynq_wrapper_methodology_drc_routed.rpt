@@ -1,0 +1,166 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Nov  2 18:42:18 2020
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_methodology -file hx711_zynq_wrapper_methodology_drc_routed.rpt -pb hx711_zynq_wrapper_methodology_drc_routed.pb -rpx hx711_zynq_wrapper_methodology_drc_routed.rpx
+| Design       : hx711_zynq_wrapper
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 26
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| DPIR-1    | Warning  | Asynchronous driver check     | 24         |
+| TIMING-18 | Warning  | Missing input or output delay | 2          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0 input pin hx711_zynq_i/hx711_package_0/inst/hx711_package_v1_0_S00_AXI_inst/ad/value_gramme0/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on dout_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on pd_sck_0 relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+
