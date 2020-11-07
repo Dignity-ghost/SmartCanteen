@@ -10,31 +10,31 @@
 
 source hx711_zynq_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
 Command: synth_design -top hx711_zynq_wrapper -part xc7z020clg400-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11532 
+INFO: Helper process launched with PID 14584 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 483.672 ; gain = 99.086
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 483.059 ; gain = 98.793
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_wrapper' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hdl/hx711_zynq_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'hx711_zynq' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:13]
-INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_hx711_package_0_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_hx711_package_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_hx711_package_0_0' (1#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_hx711_package_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_processing_system7_0_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_processing_system7_0_0' (2#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_hx711_package_0_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_hx711_package_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_hx711_package_0_0' (1#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_hx711_package_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_processing_system7_0_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_processing_system7_0_0' (2#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_processing_system7_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_ps7_0_axi_periph_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:307]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1DK7VXS' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:622]
-INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_auto_pc_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_auto_pc_0' (3#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_auto_pc_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_auto_pc_0' (3#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1DK7VXS' (4#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:622]
 INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_ps7_0_axi_periph_0' (5#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:307]
-INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_rst_ps7_0_50M_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_rst_ps7_0_50M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_rst_ps7_0_50M_0' (6#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-1716-MSI/realtime/hx711_zynq_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'hx711_zynq_rst_ps7_0_50M_0' [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_rst_ps7_0_50M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_rst_ps7_0_50M_0' (6#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/.Xil/Vivado-14496-MSI/realtime/hx711_zynq_rst_ps7_0_50M_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_50M' of module 'hx711_zynq_rst_ps7_0_50M_0' requires 10 connections, but only 6 given [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:298]
 INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq' (7#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/synth/hx711_zynq.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'hx711_zynq_wrapper' (8#1) [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hdl/hx711_zynq_wrapper.v:12]
@@ -43,7 +43,7 @@ WARNING: [Synth 8-3331] design s00_couplers_imp_1DK7VXS has unconnected port M_A
 WARNING: [Synth 8-3331] design hx711_zynq_ps7_0_axi_periph_0 has unconnected port ACLK
 WARNING: [Synth 8-3331] design hx711_zynq_ps7_0_axi_periph_0 has unconnected port ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 539.563 ; gain = 154.977
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 538.781 ; gain = 154.516
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -56,10 +56,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 539.563 ; gain = 154.977
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 538.781 ; gain = 154.516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 539.563 ; gain = 154.977
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 538.781 ; gain = 154.516
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg400-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -80,24 +80,24 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/hx711_zynq_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.758 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.758 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 831.605 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 831.605 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.758 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 830.758 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 831.605 ; gain = 447.020
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 830.758 ; gain = 446.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 831.605 ; gain = 447.020
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 830.758 ; gain = 446.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -369,10 +369,10 @@ Applied set_property DONT_TOUCH = true for hx711_zynq_i/ps7_0_axi_periph. (const
 Applied set_property DONT_TOUCH = true for hx711_zynq_i/rst_ps7_0_50M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for hx711_zynq_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 831.605 ; gain = 447.020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 830.758 ; gain = 446.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 831.605 ; gain = 447.020
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 830.758 ; gain = 446.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -412,7 +412,7 @@ WARNING: [Synth 8-3331] design hx711_zynq_ps7_0_axi_periph_0 has unconnected por
 WARNING: [Synth 8-3331] design hx711_zynq_ps7_0_axi_periph_0 has unconnected port M00_ACLK
 WARNING: [Synth 8-3331] design hx711_zynq_ps7_0_axi_periph_0 has unconnected port M00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 831.605 ; gain = 447.020
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 830.758 ; gain = 446.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -426,13 +426,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'hx711_zynq_i/processing_system7_0/FCLK_CLK0' to pin 'hx711_zynq_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 881.461 ; gain = 496.875
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.074 ; gain = 496.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 881.609 ; gain = 497.023
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 881.223 ; gain = 496.957
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -444,7 +444,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -468,7 +468,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -481,7 +481,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -493,25 +493,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -549,25 +549,25 @@ Report Instance Areas:
 |4     |      s00_couplers   |s00_couplers_imp_1DK7VXS      |   177|
 +------+---------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 890.949 ; gain = 506.684
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 891.332 ; gain = 214.703
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 891.332 ; gain = 506.746
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 890.949 ; gain = 214.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 890.949 ; gain = 506.684
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 903.137 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 31 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 905.527 ; gain = 528.133
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 905.527 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 903.137 ; gain = 526.063
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 903.137 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/hx711_zynq_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file hx711_zynq_wrapper_utilization_synth.rpt -pb hx711_zynq_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 18:41:11 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 19:51:30 2020...

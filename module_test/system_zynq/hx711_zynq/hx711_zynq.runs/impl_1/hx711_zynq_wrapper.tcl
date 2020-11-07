@@ -60,8 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -72,7 +70,7 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/wt [current_project]
   set_property parent.project_path E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.xpr [current_project]
-  set_property ip_repo_paths e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0 [current_project]
+  set_property ip_repo_paths E:/project/SmartCanteen/module_test/system_zynq/ip_repo [current_project]
   update_ip_catalog
   set_property ip_output_repo E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

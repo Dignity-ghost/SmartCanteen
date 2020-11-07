@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1604313642">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-2" LaunchTime="1604663458">
   <File Type="BITSTR-BMM" Name="hx711_zynq_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="hx711_zynq_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="hx711_zynq_wrapper_timing_summary_init.rpt"/>
@@ -122,5 +122,4 @@
     <Step Id="write_bitstream"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="hx711_zynq_hx711_package_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hx711_zynq_processing_system7_0_0"/>
 </GenRun>

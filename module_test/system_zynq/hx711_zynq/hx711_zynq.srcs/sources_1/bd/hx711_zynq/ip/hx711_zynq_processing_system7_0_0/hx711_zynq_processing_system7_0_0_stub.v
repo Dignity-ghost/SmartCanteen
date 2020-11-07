@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
 // Date        : Mon Nov  2 16:18:59 2020
 // Host        : MSI running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               e:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/ip/hx711_zynq_processing_system7_0_0/hx711_zynq_processing_system7_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top hx711_zynq_processing_system7_0_0 -prefix
+//               hx711_zynq_processing_system7_0_0_ hx711_zynq_processing_system7_0_0_stub.v
 // Design      : hx711_zynq_processing_system7_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-2

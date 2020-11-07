@@ -67,8 +67,8 @@ int main()
     	gram   = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG2_OFFSET);
     	print("-----------------------\n\r");
     	printf("Origin : %x\n\r", origin);
-    	printf("Gram   : %d g\n\r", gram);
-    	printf("Gramhex: %x  \n\r", gram);
+    	printf("Before_Gram   : %d g\n\r", gram);
+    	printf("Befpre_Gramhex: %x  \n\r", gram);
     	gram   = gram - gram_start;
     	printf("Gram   : %d g\n\r", gram);
     	printf("Gramhex: %x  \n\r", gram);

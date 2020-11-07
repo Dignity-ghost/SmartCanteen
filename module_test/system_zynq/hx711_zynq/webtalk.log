@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov  6 16:12:11 2020
+# Process ID: 10112
+# Current directory: e:/project/SmartCanteen/module_test/system_zynq/hx711_zynq
+# Command line: wbtcv.exe -mode batch -source e:/project/smartcanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project/hx711_package_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: e:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/webtalk.log
+# Journal file: e:/project/SmartCanteen/module_test/system_zynq/hx711_zynq\webtalk.jou
+#-----------------------------------------------------------
+source e:/project/smartcanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project/hx711_package_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Nov  6 16:12:12 2020...

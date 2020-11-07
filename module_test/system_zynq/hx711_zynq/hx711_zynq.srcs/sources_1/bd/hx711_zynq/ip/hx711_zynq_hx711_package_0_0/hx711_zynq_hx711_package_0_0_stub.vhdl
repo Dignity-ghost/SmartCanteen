@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Mon Nov  2 18:38:39 2020
+-- Date        : Fri Nov  6 18:32:13 2020
 -- Host        : MSI running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               e:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/ip/hx711_zynq_hx711_package_0_0/hx711_zynq_hx711_package_0_0_stub.vhdl
+--               E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/ip/hx711_zynq_hx711_package_0_0/hx711_zynq_hx711_package_0_0_stub.vhdl
 -- Design      : hx711_zynq_hx711_package_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-2

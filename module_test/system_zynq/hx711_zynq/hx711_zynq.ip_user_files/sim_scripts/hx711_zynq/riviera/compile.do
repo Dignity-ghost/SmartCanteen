@@ -59,8 +59,8 @@ vlog -work processing_system7_vip_v1_0_6  -sv2k12 "+incdir+../../../../hx711_zyn
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ipshared/ec67/hdl" "+incdir+../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ipshared/70cf/hdl" "+incdir+../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ip/hx711_zynq_processing_system7_0_0" "+incdir+E:/software/vivado2018/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ip/hx711_zynq_processing_system7_0_0/sim/hx711_zynq_processing_system7_0_0.v" \
 "../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq/rtl/ad.v" \
-"../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ipshared/f3cc/hdl/hx711_package_v1_0_S00_AXI.v" \
-"../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ipshared/f3cc/hdl/hx711_package_v1_0.v" \
+"../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ipshared/b7b6/hdl/hx711_package_v1_0_S00_AXI.v" \
+"../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ipshared/b7b6/hdl/hx711_package_v1_0.v" \
 "../../../../hx711_zynq.srcs/sources_1/bd/hx711_zynq/ip/hx711_zynq_hx711_package_0_0/sim/hx711_zynq_hx711_package_0_0.v" \
 
 vcom -work lib_cdc_v1_0_2 -93 \

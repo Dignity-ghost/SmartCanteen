@@ -48,7 +48,7 @@
 
 
 // IP VLNV: yubow:user:hx711_package:1.0
-// IP Revision: 2
+// IP Revision: 8
 
 `timescale 1ns/1ps
 

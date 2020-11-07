@@ -48,7 +48,7 @@
 
 
 // IP VLNV: yubow:user:hx711_package:1.0
-// IP Revision: 2
+// IP Revision: 8
 
 (* X_CORE_INFO = "hx711_package_v1_0,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "hx711_zynq_hx711_package_0_0,hx711_package_v1_0,{}" *)

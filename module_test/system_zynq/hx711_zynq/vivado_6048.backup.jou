@@ -1,0 +1,168 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov  6 16:34:16 2020
+# Process ID: 6048
+# Current directory: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16108 E:\project\SmartCanteen\module_test\system_zynq\hx711_zynq\hx711_zynq.xpr
+# Log file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/vivado.log
+# Journal file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/hx711_zynq_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/hx711_zynq_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0
+report_ip_status -name ip_status 
+upgrade_ip -vlnv yubow:user:hx711_package:1.0 [get_ips  hx711_zynq_hx711_package_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips hx711_zynq_hx711_package_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+catch { config_ip_cache -export [get_ips -all hx711_zynq_hx711_package_0_0] }
+catch { config_ip_cache -export [get_ips -all hx711_zynq_auto_pc_0] }
+export_ip_user_files -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+launch_runs -jobs 12 hx711_zynq_hx711_package_0_0_synth_1
+export_simulation -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files -ipstatic_source_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/modelsim} {questa=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/questa} {riviera=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/riviera} {activehdl=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs hx711_zynq_processing_system7_0_0_synth_1]
+set_property needs_refresh false [get_runs hx711_zynq_hx711_package_0_0_synth_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/hx711_zynq_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
+set_property  ip_repo_paths  {e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0 E:/project/SmartCanteen/module_test/system_zynq/ip_repo} [current_project]
+update_ip_catalog
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project hx711_zynq
+current_project hx711_package_v1_0_project
+close_project
+set_property  ip_repo_paths  e:/project/SmartCanteen/module_test/system_zynq/ip_repo [current_project]
+update_ip_catalog
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path e:/project/SmartCanteen/module_test/system_zynq/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv yubow:user:hx711_package:1.0 [get_ips  hx711_zynq_hx711_package_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips hx711_zynq_hx711_package_0_0] -no_script -sync -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+set_property synth_checkpoint_mode None [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+generate_target all [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+export_ip_user_files -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files -ipstatic_source_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/modelsim} {questa=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/questa} {riviera=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/riviera} {activehdl=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_param general.maxThreads 8
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+report_ip_status -name ip_status 
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/hx711_zynq_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/hx711_zynq_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path e:/project/SmartCanteen/module_test/system_zynq/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv yubow:user:hx711_package:1.0 [get_ips  hx711_zynq_hx711_package_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips hx711_zynq_hx711_package_0_0] -no_script -sync -force -quiet
+set_property synth_checkpoint_mode Hierarchical [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+generate_target all [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+catch { config_ip_cache -export [get_ips -all hx711_zynq_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all hx711_zynq_hx711_package_0_0] }
+catch { config_ip_cache -export [get_ips -all hx711_zynq_rst_ps7_0_50M_0] }
+catch { config_ip_cache -export [get_ips -all hx711_zynq_auto_pc_0] }
+export_ip_user_files -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+launch_runs -jobs 12 hx711_zynq_hx711_package_0_0_synth_1
+export_simulation -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files -ipstatic_source_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/modelsim} {questa=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/questa} {riviera=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/riviera} {activehdl=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs hx711_zynq_hx711_package_0_0_synth_1]
+open_bd_design {E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd}
+generate_target all [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+export_ip_user_files -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+export_simulation -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files -ipstatic_source_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/modelsim} {questa=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/questa} {riviera=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/riviera} {activehdl=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+synth_design -rtl -name rtl_1
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 8 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path e:/project/SmartCanteen/module_test/system_zynq/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip [get_ips]
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+generate_target all [get_files  E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+catch { config_ip_cache -export [get_ips -all hx711_zynq_hx711_package_0_0] }
+catch { config_ip_cache -export [get_ips -all hx711_zynq_auto_pc_0] }
+export_ip_user_files -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd]
+launch_runs -jobs 12 hx711_zynq_hx711_package_0_0_synth_1
+export_simulation -of_objects [get_files E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.srcs/sources_1/bd/hx711_zynq/hx711_zynq.bd] -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/sim_scripts -ip_user_files_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files -ipstatic_source_dir E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/modelsim} {questa=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/questa} {riviera=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/riviera} {activehdl=E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
