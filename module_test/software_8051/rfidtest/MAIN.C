@@ -9,8 +9,9 @@
 #include "mfrc522.h"
 
 #define aimAddr = 0x3c;
+#define aimAddrOpp = 0xc3;
 
-unsigned char code data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, aimAddr, ~aimAddr, aimAddr, ~aimAddr};
+unsigned char code data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
 //M1卡的某一块写为如下格式，则该块为钱包，可接收扣款和充值命令
 //4字节金额（低字节在前）＋4字节金额取反＋4字节金额＋1字节块地址＋1字节块地址取反＋1字节块地址＋1字节块地址取反
 unsigned char code data2[4] = {0, 0, 0, 0x01};
@@ -76,13 +77,13 @@ void main()
             continue;
         }
 
-        status = PcdAuthState(PICC_AUTHENT1A, aimAddr, DefaultKey, g_ucTempbuf); //验证卡片密码
+        status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //验证卡片密码
         if (status != MI_OK)
         {
             continue;
         }
 
-        status = PcdWrite(aimAddr, data1); //写块
+        status = PcdWrite(60, data1); //写块
         if (status != MI_OK)
         {
             continue;
@@ -109,25 +110,25 @@ void main()
                 continue;
             }
 
-            status = PcdAuthState(PICC_AUTHENT1A, aimAddr, DefaultKey, g_ucTempbuf); //验证卡片密码
+            status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //验证卡片密码
             if (status != MI_OK)
             {
                 continue;
             }
 
-            status = PcdValue(PICC_DECREMENT, aimAddr, data2); //扣款
+            status = PcdValue(PICC_DECREMENT, 60, data2); //扣款
             if (status != MI_OK)
             {
                 continue;
             }
 
-            status = PcdBakValue(aimAddr, aimAddr+1); //块备份
+            status = PcdBakValue(60, 61); //块备份
             if (status != MI_OK)
             {
                 continue;
             }
 
-            status = PcdRead(aimAddr+1, g_ucTempbuf); //读块
+            status = PcdRead(61, g_ucTempbuf); //读块
             if (status != MI_OK)
             {
                 continue;

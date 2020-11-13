@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 20:45:31 PAGE 1   
+C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
@@ -12,187 +12,198 @@ line level    source
    3          *  æß’Ò:11.0592MHZ
    4          ------------------------------------------------*/
    5          #include <reg52.h>
-   6          #include  <STDIO.H>
+   6          #include <STDIO.H>
    7          #include <string.h>
    8          #include "main.h"
    9          #include "mfrc522.h"
   10          
-  11          unsigned char code data1[16] = {0x12,0x34,0x56,0x78,0xED,0xCB,0xA9,0x87,0x12,0x34,0x56,0x78,0x01,0xFE,0x01
-             -,0xFE};
-  12          //M1ø®µƒƒ≥“ªøÈ–¥Œ™»Áœ¬∏Ò Ω£¨‘Ú∏√øÈŒ™«Æ∞¸£¨ø…Ω” ’ø€øÓ∫Õ≥‰÷µ√¸¡Ó
-  13          //4◊÷Ω⁄Ω∂Ó£®µÕ◊÷Ω⁄‘⁄«∞£©£´4◊÷Ω⁄Ω∂Ó»°∑¥£´4◊÷Ω⁄Ω∂Ó£´1◊÷Ω⁄øÈµÿ÷∑£´1◊÷Ω⁄øÈµÿ÷∑»°∑¥£´1◊÷Ω⁄øÈµÿ÷∑£´1◊÷Ω⁄øÈµÿ÷
-             -∑»°∑¥ 
-  14          unsigned char code data2[4]  = {0,0,0,0x01};
-  15          unsigned char code DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}; 
-  16          
-  17          
-  18          unsigned char g_ucTempbuf[20];                        
-  19          void delay1(unsigned int z)
-  20          {
-  21   1        unsigned int x,y;
-  22   1        for(x=z;x>0;x--)
-  23   1        for(y=110;y>0;y--); 
-  24   1      }  
-  25          
-  26          
-  27          void main( )
-  28          {    
-  29   1           unsigned char status,i;
-  30   1           unsigned int temp;
-  31   1           InitializeSystem( );
-  32   1           PcdReset();
-  33   1           PcdAntennaOff(); 
-  34   1           PcdAntennaOn(); 
-  35   1           while ( 1 )
-  36   1           {   
-  37   2      
-  38   2              
-  39   2               status = PcdRequest(PICC_REQALL, g_ucTempbuf);//—∞ø®
-  40   2               if (status != MI_OK)
-  41   2               {    
-  42   3                    InitializeSystem( );
-  43   3           PcdReset();
-  44   3           PcdAntennaOff(); 
-  45   3           PcdAntennaOn(); 
-  46   3              continue;
-  47   3               }
-  48   2                 
-  49   2            printf("ø®µƒ¿‡–Õ:");
-  50   2                  for(i=0;i<2;i++)
-  51   2                {
-  52   3                  temp=g_ucTempbuf[i];
-  53   3                  printf("%X",temp);
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 20:45:31 PAGE 2   
+  11          #define aimAddr = 0x3c;
+  12          #define aimAddrOpp = 0xc3;
+  13          
+  14          unsigned char code data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x
+             -3c, 0xc3, 0x3c, 0xc3};
+  15          //M1ø®µƒƒ≥“ªøÈ–¥Œ™»Áœ¬∏Ò Ω£¨‘Ú∏√øÈŒ™«Æ∞¸£¨ø…Ω” ’ø€øÓ∫Õ≥‰÷µ√¸¡Ó
+  16          //4◊÷Ω⁄Ω∂Ó£®µÕ◊÷Ω⁄‘⁄«∞£©£´4◊÷Ω⁄Ω∂Ó»°∑¥£´4◊÷Ω⁄Ω∂Ó£´1◊÷Ω⁄øÈµÿ÷∑£´1◊÷Ω⁄øÈµÿ÷∑»°∑¥£´1◊÷Ω⁄øÈµÿ÷∑£´1◊÷Ω⁄øÈµÿ÷
+             -∑»°∑¥
+  17          unsigned char code data2[4] = {0, 0, 0, 0x01};
+  18          unsigned char code DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+  19          
+  20          unsigned char g_ucTempbuf[20];
+  21          void delay1(unsigned int z)
+  22          {
+  23   1          unsigned int x, y;
+  24   1          for (x = z; x > 0; x--)
+  25   1              for (y = 110; y > 0; y--)
+  26   1                  ;
+  27   1      }
+  28          
+  29          void main()
+  30          {
+  31   1          unsigned char status, i;
+  32   1          unsigned int temp;
+  33   1          InitializeSystem();
+  34   1          PcdReset();
+  35   1          PcdAntennaOff();
+  36   1          PcdAntennaOn();
+  37   1          while (1)
+  38   1          {
+  39   2      
+  40   2              status = PcdRequest(PICC_REQALL, g_ucTempbuf); //—∞ø®
+  41   2              if (status != MI_OK) //initial
+  42   2              {
+  43   3                  InitializeSystem();
+  44   3                  PcdReset();
+  45   3                  PcdAntennaOff();
+  46   3                  PcdAntennaOn();
+  47   3                  continue;
+  48   3              }
+  49   2      
+  50   2              printf("ø®µƒ¿‡–Õ:");
+  51   2              for (i = 0; i < 2; i++)
+  52   2              {
+  53   3                  temp = g_ucTempbuf[i];
+C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 2   
 
-  54   3                  
-  55   3                }
-  56   2            
-  57   2               status = PcdAnticoll(g_ucTempbuf);//∑¿≥Â◊≤
-  58   2               if (status != MI_OK)
-  59   2               {    continue;    }
-  60   2      
-  61   2               
-  62   2                ////////“‘œ¬Œ™≥¨º∂÷’∂À¥Ú”°≥ˆµƒƒ⁄»›////////////////////////
-  63   2              
-  64   2                printf("ø®–Ú¡–∫≈£∫"); //≥¨º∂÷’∂Àœ‘ æ,
-  65   2                for(i=0;i<4;i++)
-  66   2                {
-  67   3                  temp=g_ucTempbuf[i];
-  68   3                  printf("%X",temp);
-  69   3                  
-  70   3                }
+  54   3                  printf("%X", temp);
+  55   3              }
+  56   2      
+  57   2              status = PcdAnticoll(g_ucTempbuf); //∑¿≥Â◊≤
+  58   2              if (status != MI_OK)
+  59   2              {
+  60   3                  continue;
+  61   3              }
+  62   2      
+  63   2              ////////“‘œ¬Œ™≥¨º∂÷’∂À¥Ú”°≥ˆµƒƒ⁄»›////////////////////////
+  64   2      
+  65   2              printf("ø®–Ú¡–∫≈£∫"); //≥¨º∂÷’∂Àœ‘ æ,
+  66   2              for (i = 0; i < 4; i++)
+  67   2              {
+  68   3                  temp = g_ucTempbuf[i];
+  69   3                  printf("%X", temp);
+  70   3              }
   71   2      
-  72   2                ///////////////////////////////////////////////////////////
+  72   2              ///////////////////////////////////////////////////////////
   73   2      
-  74   2               status = PcdSelect(g_ucTempbuf);//—°∂®ø®∆¨
-  75   2               if (status != MI_OK)
-  76   2               {    continue;    }
-  77   2               
-  78   2               status = PcdAuthState(PICC_AUTHENT1A, 1, DefaultKey, g_ucTempbuf);//—È÷§ø®∆¨√‹¬Î
-  79   2               if (status != MI_OK)
-  80   2               {    continue;    }
-  81   2               
-  82   2               status = PcdWrite(1, data1);//–¥øÈ
-  83   2               if (status != MI_OK)
-  84   2               {    continue;    }
-  85   2      while(1)
-  86   2          {
-  87   3               status = PcdRequest(PICC_REQALL, g_ucTempbuf);//—∞ø®
-  88   3               if (status != MI_OK)
-  89   3               {   
-  90   4           InitializeSystem( );
-  91   4           PcdReset();
-  92   4           PcdAntennaOff(); 
-  93   4           PcdAntennaOn(); 
-  94   4              continue;
-  95   4               }
-  96   3           status = PcdAnticoll(g_ucTempbuf);//∑¿≥Â◊≤
-  97   3               if (status != MI_OK)
-  98   3               {    continue;    }
-  99   3          status = PcdSelect(g_ucTempbuf);//—°∂®ø®∆¨
- 100   3               if (status != MI_OK)
- 101   3               {    continue;    }
- 102   3               
- 103   3               status = PcdAuthState(PICC_AUTHENT1A, 1, DefaultKey, g_ucTempbuf);//—È÷§ø®∆¨√‹¬Î
- 104   3               if (status != MI_OK)
- 105   3               {    continue;    }
- 106   3      
- 107   3      
- 108   3               status = PcdValue(PICC_DECREMENT,1,data2);//ø€øÓ
- 109   3               if (status != MI_OK)
- 110   3               {    continue;    }
- 111   3           
- 112   3               status = PcdBakValue(1, 2);//øÈ±∏∑›
- 113   3               if (status != MI_OK)
- 114   3               {    continue;    }
- 115   3               
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 20:45:31 PAGE 3   
+  74   2              status = PcdSelect(g_ucTempbuf); //—°∂®ø®∆¨
+  75   2              if (status != MI_OK)
+  76   2              {
+  77   3                  continue;
+  78   3              }
+  79   2      
+  80   2              status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //—È÷§ø®∆¨√‹¬Î
+  81   2              if (status != MI_OK)
+  82   2              {
+  83   3                  continue;
+  84   3              }
+  85   2      
+  86   2              status = PcdWrite(60, data1); //–¥øÈ
+  87   2              if (status != MI_OK)
+  88   2              {
+  89   3                  continue;
+  90   3              }
+  91   2              while (1)
+  92   2              {
+  93   3                  status = PcdRequest(PICC_REQALL, g_ucTempbuf); //—∞ø®
+  94   3                  if (status != MI_OK)
+  95   3                  {
+  96   4                      InitializeSystem();
+  97   4                      PcdReset();
+  98   4                      PcdAntennaOff();
+  99   4                      PcdAntennaOn();
+ 100   4                      continue;
+ 101   4                  }
+ 102   3                  status = PcdAnticoll(g_ucTempbuf); //∑¿≥Â◊≤
+ 103   3                  if (status != MI_OK)
+ 104   3                  {
+ 105   4                      continue;
+ 106   4                  }
+ 107   3                  status = PcdSelect(g_ucTempbuf); //—°∂®ø®∆¨
+ 108   3                  if (status != MI_OK)
+ 109   3                  {
+ 110   4                      continue;
+ 111   4                  }
+ 112   3      
+ 113   3                  status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //—È÷§ø®∆¨√‹¬Î
+ 114   3                  if (status != MI_OK)
+ 115   3                  {
+C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 3   
 
- 116   3               status = PcdRead(2, g_ucTempbuf);//∂¡øÈ
- 117   3               if (status != MI_OK)
- 118   3               {    continue;    }
- 119   3                printf("ø®∂¡øÈ£∫"); //≥¨º∂÷’∂Àœ‘ æ,
- 120   3               for(i=0;i<16;i++)
- 121   3                {
- 122   4                  temp=g_ucTempbuf[i];
- 123   4                  printf("%X",temp);
- 124   4                  
- 125   4                }
- 126   3      
- 127   3           printf("\n");
- 128   3          LED_GREEN = 0;
- 129   3      //      for(i=0;i<250;i++)//œ» ‰≥ˆ“ª÷÷∆µ¬ µƒ…˘“Ù
- 130   3      //        {
- 131   3      //         for(j=0;j<80;j++);
- 132   3      //         Speaker=~Speaker;
- 133   3      //       }
- 134   3          delay1(100);
- 135   3          LED_GREEN = 1;
- 136   3          delay1(100);
- 137   3          LED_GREEN = 0;
- 138   3          delay1(200);
- 139   3          LED_GREEN = 1;                     
- 140   3           PcdHalt();
- 141   3          }
- 142   2          }
- 143   1      }
- 144          
- 145          
- 146          /////////////////////////////////////////////////////////////////////
- 147          //œµÕ≥≥ı ºªØ
- 148          /////////////////////////////////////////////////////////////////////
- 149          void InitializeSystem()
- 150          {
- 151   1      /*  P0M1 = 0x0; P0M2 = 0x0;
- 152   1        P1M1 = 0x0; P1M2 = 0x0;                      
- 153   1        P3M1 = 0x0; P3M2 = 0xFF; 
- 154   1      */  P0 = 0xFF; P1 = 0xFF; P3 = 0xFF;P2 = 0xFF;
- 155   1      
- 156   1        TMOD=0x21;       //…ËT0Œ™∑Ω Ω1£¨GATE=1£ª
- 157   1        SCON=0x50;
- 158   1        TH1=0xFD;          //≤®Ãÿ¬ Œ™2400bps
- 159   1        TL1=0xFD;
- 160   1        TH0=0;
- 161   1        TL0=0; 
- 162   1        TR0=1;  
- 163   1        ET0=1;             //‘ –ÌT0÷–∂œ
- 164   1        TR1=1;         //ø™∆Ù∂® ±∆˜
- 165   1        TI=1;
- 166   1        EA=1;         //ø™∆Ù◊‹÷–∂œ
- 167   1        
- 168   1        ES = 1;
- 169   1        RI = 1;
- 170   1      
- 171   1       
- 172   1      }
- 173          
- 174          
- 175          
- 176             
- 177            
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 20:45:31 PAGE 4   
+ 116   4                      continue;
+ 117   4                  }
+ 118   3      
+ 119   3                  status = PcdValue(PICC_DECREMENT, 60, data2); //ø€øÓ
+ 120   3                  if (status != MI_OK)
+ 121   3                  {
+ 122   4                      continue;
+ 123   4                  }
+ 124   3      
+ 125   3                  status = PcdBakValue(60, 61); //øÈ±∏∑›
+ 126   3                  if (status != MI_OK)
+ 127   3                  {
+ 128   4                      continue;
+ 129   4                  }
+ 130   3      
+ 131   3                  status = PcdRead(61, g_ucTempbuf); //∂¡øÈ
+ 132   3                  if (status != MI_OK)
+ 133   3                  {
+ 134   4                      continue;
+ 135   4                  }
+ 136   3                  printf("ø®∂¡øÈ£∫"); //≥¨º∂÷’∂Àœ‘ æ,
+ 137   3                  for (i = 0; i < 16; i++)
+ 138   3                  {
+ 139   4                      temp = g_ucTempbuf[i];
+ 140   4                      printf("%X", temp);
+ 141   4                  }
+ 142   3      
+ 143   3                  printf("\n");
+ 144   3                  LED_GREEN = 0;
+ 145   3                  //      for(i=0;i<250;i++)//œ» ‰≥ˆ“ª÷÷∆µ¬ µƒ…˘“Ù
+ 146   3                  //        {
+ 147   3                  //         for(j=0;j<80;j++);
+ 148   3                  //         Speaker=~Speaker;
+ 149   3                  //       }
+ 150   3                  delay1(100);
+ 151   3                  LED_GREEN = 1;
+ 152   3                  delay1(100);
+ 153   3                  LED_GREEN = 0;
+ 154   3                  delay1(200);
+ 155   3                  LED_GREEN = 1;
+ 156   3                  PcdHalt();
+ 157   3              }
+ 158   2          }
+ 159   1      }
+ 160          
+ 161          /////////////////////////////////////////////////////////////////////
+ 162          //œµÕ≥≥ı ºªØ
+ 163          /////////////////////////////////////////////////////////////////////
+ 164          void InitializeSystem()
+ 165          {
+ 166   1          /*  P0M1 = 0x0; P0M2 = 0x0;
+ 167   1        P1M1 = 0x0; P1M2 = 0x0;                      
+ 168   1        P3M1 = 0x0; P3M2 = 0xFF; 
+ 169   1      */
+ 170   1          P0 = 0xFF;
+ 171   1          P1 = 0xFF;
+ 172   1          P3 = 0xFF;
+ 173   1          P2 = 0xFF;
+ 174   1      
+ 175   1          TMOD = 0x21; //…ËT0Œ™∑Ω Ω1£¨GATE=1£ª
+ 176   1          SCON = 0x50;
+ 177   1          TH1 = 0xFD; //≤®Ãÿ¬ Œ™2400bps
+C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 4   
 
- 178          
+ 178   1          TL1 = 0xFD;
+ 179   1          TH0 = 0;
+ 180   1          TL0 = 0;
+ 181   1          TR0 = 1;
+ 182   1          ET0 = 1; //‘ –ÌT0÷–∂œ
+ 183   1          TR1 = 1; //ø™∆Ù∂® ±∆˜
+ 184   1          TI = 1;
+ 185   1          EA = 1; //ø™∆Ù◊‹÷–∂œ
+ 186   1      
+ 187   1          ES = 1;
+ 188   1          RI = 1;
+ 189   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
