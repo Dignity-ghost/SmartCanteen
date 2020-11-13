@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Nov  6 19:34:01 2020
-# Process ID: 2464
+# Start of session at: Sat Nov  7 15:45:26 2020
+# Process ID: 12820
 # Current directory: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3852 E:\project\SmartCanteen\module_test\system_zynq\hx711_zynq\hx711_zynq.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15416 E:\project\SmartCanteen\module_test\system_zynq\hx711_zynq\hx711_zynq.xpr
 # Log file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/vivado.log
 # Journal file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq\vivado.jou
 #-----------------------------------------------------------
@@ -16,21 +16,11 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 855.211 ; gain = 216.609
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 795.168 ; gain = 182.008
 update_compile_order -fileset sources_1
-INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Fri Nov  6 19:50:59 2020] Launched synth_1...
-Run output will be captured here: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/synth_1/runme.log
-[Fri Nov  6 19:50:59 2020] Launched impl_1...
-Run output will be captured here: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/runme.log
-INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
-file copy -force E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.runs/impl_1/hx711_zynq_wrapper.sysdef E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
-
 launch_sdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
 INFO: [Vivado 12-417] Running xsdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
 exit
-INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 22:01:35 2020...
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  7 17:28:16 2020...

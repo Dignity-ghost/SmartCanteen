@@ -1,8 +1,8 @@
-21:06:55 **** Incremental Build of configuration Debug for project hx711_zynq ****
+20:57:08 **** Incremental Build of configuration Debug for project hx711_zynq ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-21:06:56 Build Finished (took 225ms)
+20:57:08 Build Finished (took 223ms)
 

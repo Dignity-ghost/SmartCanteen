@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    10/24/2020  13:31:25  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/13/2020  20:45:31  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  TEST522 (MAIN)
             CODE    0DF4H     003DH     UNIT         ?CO?MAIN
             CODE    0E31H     003DH     UNIT         ?PR?PCDHALT?RC522
             CODE    0E6EH     002CH     UNIT         ?PR?INITIALIZESYSTEM?MAIN
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 2
 
 
             CODE    0E9AH     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
@@ -119,7 +119,7 @@ SEGMENT                              BIT_GROUP          DATA_GROUP
   +--> ?PR?_CLEARBITMASK?RC522
   +--> ?PR?_SETBITMASK?RC522
   +--> ?PR?_READRAWRC?RC522
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 3
 
 
 
@@ -179,7 +179,7 @@ SEGMENT                              BIT_GROUP          DATA_GROUP
   +--> ?PR?_PCDCOMMF522?RC522
 
 
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 4
 
 
 
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0024H         SYMBOL        temp
   -------         ENDDO         
   C:035FH         LINE#         27
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 5
 
 
   C:035FH         LINE#         28
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0462H         LINE#         99
   C:046CH         LINE#         100
   C:046FH         LINE#         101
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 6
 
 
   C:046FH         LINE#         103
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:00B0H         PUBLIC        P3
   C:0C95H         PUBLIC        _PcdRequest
   B:0090H.1       PUBLIC        MF522_RST
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 7
 
 
   C:0BB0H         PUBLIC        _CalulateCRC
@@ -419,7 +419,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0CCDH         LINE#         43
   C:0CDDH         LINE#         44
   C:0CDDH         LINE#         45
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 8
 
 
   C:0CE8H         LINE#         46
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0AAAH         LINE#         113
   C:0ABFH         LINE#         114
   C:0AC9H         LINE#         115
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 9
 
 
   C:0ACCH         LINE#         116
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0C92H         LINE#         186
   C:0C94H         LINE#         188
   C:0C94H         LINE#         189
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 10
 
 
   -------         ENDPROC       _PCDREAD
@@ -599,7 +599,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0749H         LINE#         258
   C:0766H         LINE#         259
   C:0775H         LINE#         260
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 11
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 11
 
 
   C:0777H         LINE#         261
@@ -659,7 +659,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0027H         SYMBOL        unLen
   D:0029H         SYMBOL        ucComMF522Buf
   -------         ENDDO         
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 12
 
 
   C:0E31H         LINE#         332
@@ -719,7 +719,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0DEAH         LINE#         399
   C:0DF1H         LINE#         400
   C:0DF3H         LINE#         401
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 13
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 13
 
 
   -------         ENDPROC       PCDRESET
@@ -779,7 +779,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0D7CH         LINE#         454
   C:0D7EH         LINE#         455
   C:0D82H         LINE#         456
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 14
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 14
 
 
   C:0D84H         LINE#         457
@@ -839,7 +839,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:004FH         SYMBOL        irqEn
   D:0050H         SYMBOL        waitFor
   D:0005H         SYMBOL        lastBits
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 15
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 15
 
 
   D:0051H         SYMBOL        n
@@ -899,7 +899,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0668H         LINE#         568
   C:066BH         LINE#         569
   C:067BH         LINE#         570
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 16
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 16
 
 
   C:069AH         LINE#         571
@@ -959,7 +959,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   -------         ENDMOD        PRINTF
 
   -------         MODULE        ?C?CLDPTR
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  10/24/2020  13:31:25  PAGE 17
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  20:45:31  PAGE 17
 
 
   C:0925H         PUBLIC        ?C?CLDPTR
