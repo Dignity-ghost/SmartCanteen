@@ -49,17 +49,34 @@
 #include "platform.h"
 #include "xil_printf.h"
 
-#include "adc_controler.h"
+#include "hx711_package.h"
 #include "xil_io.h"
 #include "xparameters.h"
 
+
+signed int origin, gram, gram_start;
 
 int main()
 {
     init_platform();
 
-    print("Hello World\n\r");
+	gram_start = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG2_OFFSET);
+    while(1)
+    {
+    	origin = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG0_OFFSET);
+    	gram   = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG2_OFFSET);
+    	print("-----------------------\n\r");
+    	printf("Origin : %x\n\r", origin);
+    	printf("Before_Origin   : %d g\n\r", gram);
+    	printf("Befpre_Originhex: %x  \n\r", gram);
+    	gram   = gram - gram_start;
+    	printf("Gram   : %d g\n\r", gram);
+    	printf("Gramhex: %x  \n\r", gram);
+    	printf("Gramsth: %x  \n\r", gram_start);
+    	for( unsigned int i = 0 ; i < 10000000 ; i++ );
+    }
 
     cleanup_platform();
     return 0;
 }
+

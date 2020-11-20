@@ -54,7 +54,7 @@
 #include "xparameters.h"
 
 
-signed int origin, gram, gram_start;
+signed int origin, gram, gram_loss, gram_start;
 
 int main()
 {
@@ -65,10 +65,12 @@ int main()
     {
     	origin = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG0_OFFSET);
     	gram   = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG2_OFFSET);
+    	gram_loss   = HX711_PACKAGE_mReadReg(XPAR_HX711_PACKAGE_0_S00_AXI_BASEADDR,HX711_PACKAGE_S00_AXI_SLV_REG3_OFFSET);
     	print("-----------------------\n\r");
     	printf("Origin : %x\n\r", origin);
-    	printf("Before_Gram   : %d g\n\r", gram);
-    	printf("Befpre_Gramhex: %x  \n\r", gram);
+    	printf("Before_Origin   : %d g\n\r", gram);
+    	printf("Befpre_Originhex: %x  \n\r", gram);
+    	printf("Befpre_Originhex: %x  \n\r", gram_loss);
     	gram   = gram - gram_start;
     	printf("Gram   : %d g\n\r", gram);
     	printf("Gramhex: %x  \n\r", gram);
