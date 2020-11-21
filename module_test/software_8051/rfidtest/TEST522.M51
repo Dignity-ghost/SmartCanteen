@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/13/2020  21:13:19  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    11/20/2020  14:03:20  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
@@ -55,21 +55,21 @@ LINK MAP OF MODULE:  TEST522 (MAIN)
             CODE    0C95H     0064H     UNIT         ?PR?_PCDREQUEST?RC522
             CODE    0CF9H     005CH     UNIT         ?PR?_READRAWRC?RC522
             CODE    0D55H     005BH     UNIT         ?PR?_WRITERAWRC?RC522
-            CODE    0DB0H     0044H     UNIT         ?PR?PCDRESET?RC522
-            CODE    0DF4H     003DH     UNIT         ?CO?MAIN
-            CODE    0E31H     003DH     UNIT         ?PR?PCDHALT?RC522
-            CODE    0E6EH     002CH     UNIT         ?PR?INITIALIZESYSTEM?MAIN
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 2
+            CODE    0DB0H     0041H     UNIT         ?PR?PCDRESET?RC522
+            CODE    0DF1H     003DH     UNIT         ?CO?MAIN
+            CODE    0E2EH     003DH     UNIT         ?PR?PCDHALT?RC522
+            CODE    0E6BH     002CH     UNIT         ?PR?INITIALIZESYSTEM?MAIN
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 2
 
 
-            CODE    0E9AH     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
-            CODE    0EC1H     001EH     UNIT         ?PR?_DELAY1?MAIN
-            CODE    0EDFH     001EH     UNIT         ?PR?_DELAY2?RC522
-            CODE    0EFDH     0012H     UNIT         ?PR?_CLEARBITMASK?RC522
-            CODE    0F0FH     0012H     UNIT         ?PR?PCDANTENNAON?RC522
-            CODE    0F21H     000DH     UNIT         ?PR?_SETBITMASK?RC522
-            CODE    0F2EH     000CH     UNIT         ?C_C51STARTUP
-            CODE    0F3AH     0007H     UNIT         ?PR?PCDANTENNAOFF?RC522
+            CODE    0E97H     0027H     UNIT         ?PR?PUTCHAR?PUTCHAR
+            CODE    0EBEH     001EH     UNIT         ?PR?_DELAY1?MAIN
+            CODE    0EDCH     001EH     UNIT         ?PR?_DELAY2?RC522
+            CODE    0EFAH     0012H     UNIT         ?PR?_CLEARBITMASK?RC522
+            CODE    0F0CH     0012H     UNIT         ?PR?PCDANTENNAON?RC522
+            CODE    0F1EH     000DH     UNIT         ?PR?_SETBITMASK?RC522
+            CODE    0F2BH     000CH     UNIT         ?C_C51STARTUP
+            CODE    0F37H     0007H     UNIT         ?PR?PCDANTENNAOFF?RC522
 
 
 
@@ -119,7 +119,7 @@ SEGMENT                              BIT_GROUP          DATA_GROUP
   +--> ?PR?_CLEARBITMASK?RC522
   +--> ?PR?_SETBITMASK?RC522
   +--> ?PR?_READRAWRC?RC522
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 3
 
 
 
@@ -179,7 +179,7 @@ SEGMENT                              BIT_GROUP          DATA_GROUP
   +--> ?PR?_PCDCOMMF522?RC522
 
 
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 4
 
 
 
@@ -200,24 +200,24 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:00B8H         PUBLIC        IP
   B:0098H.0       PUBLIC        RI
   B:0098H.1       PUBLIC        TI
-  C:0E6EH         PUBLIC        InitializeSystem
+  C:0E6BH         PUBLIC        InitializeSystem
   C:035FH         PUBLIC        main
   B:00B0H.0       PUBLIC        LED_GREEN
   D:0098H         PUBLIC        SCON
   D:0089H         PUBLIC        TMOD
   D:0088H         PUBLIC        TCON
-  C:0EC1H         PUBLIC        _delay1
+  C:0EBEH         PUBLIC        _delay1
   B:00A8H.1       PUBLIC        ET0
   D:008CH         PUBLIC        TH0
-  C:0E17H         PUBLIC        data1
+  C:0E14H         PUBLIC        data1
   D:008DH         PUBLIC        TH1
-  C:0E27H         PUBLIC        data2
+  C:0E24H         PUBLIC        data2
   D:008AH         PUBLIC        TL0
   D:008BH         PUBLIC        TL1
   B:0088H.4       PUBLIC        TR0
   B:0088H.6       PUBLIC        TR1
   D:00C8H         PUBLIC        T2CON
-  C:0E2BH         PUBLIC        DefaultKey
+  C:0E28H         PUBLIC        DefaultKey
   D:0008H         PUBLIC        g_ucTempbuf
   D:00D0H         PUBLIC        PSW
   -------         PROC          _DELAY1
@@ -226,11 +226,11 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0006H         SYMBOL        x
   D:0004H         SYMBOL        y
   -------         ENDDO         
-  C:0EC1H         LINE#         21
-  C:0EC1H         LINE#         22
-  C:0EC1H         LINE#         24
-  C:0ECAH         LINE#         25
-  C:0EDEH         LINE#         27
+  C:0EBEH         LINE#         21
+  C:0EBEH         LINE#         22
+  C:0EBEH         LINE#         24
+  C:0EC7H         LINE#         25
+  C:0EDBH         LINE#         27
   -------         ENDPROC       _DELAY1
   -------         PROC          MAIN
   -------         DO            
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0024H         SYMBOL        temp
   -------         ENDDO         
   C:035FH         LINE#         29
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 5
 
 
   C:035FH         LINE#         30
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0449H         LINE#         97
   C:044CH         LINE#         98
   C:044FH         LINE#         99
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 6
 
 
   C:0452H         LINE#         100
@@ -352,35 +352,35 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0513H         LINE#         157
   -------         ENDPROC       MAIN
   -------         PROC          INITIALIZESYSTEM
-  C:0E6EH         LINE#         164
-  C:0E6EH         LINE#         165
-  C:0E6EH         LINE#         170
-  C:0E71H         LINE#         171
-  C:0E74H         LINE#         172
-  C:0E77H         LINE#         173
-  C:0E7AH         LINE#         175
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 7
+  C:0E6BH         LINE#         164
+  C:0E6BH         LINE#         165
+  C:0E6BH         LINE#         170
+  C:0E6EH         LINE#         171
+  C:0E71H         LINE#         172
+  C:0E74H         LINE#         173
+  C:0E77H         LINE#         175
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 7
 
 
-  C:0E7DH         LINE#         176
-  C:0E80H         LINE#         177
-  C:0E83H         LINE#         178
-  C:0E86H         LINE#         179
-  C:0E89H         LINE#         180
-  C:0E8BH         LINE#         181
-  C:0E8DH         LINE#         182
-  C:0E8FH         LINE#         183
-  C:0E91H         LINE#         184
-  C:0E93H         LINE#         185
-  C:0E95H         LINE#         187
-  C:0E97H         LINE#         188
-  C:0E99H         LINE#         189
+  C:0E7AH         LINE#         176
+  C:0E7DH         LINE#         177
+  C:0E80H         LINE#         178
+  C:0E83H         LINE#         179
+  C:0E86H         LINE#         180
+  C:0E88H         LINE#         181
+  C:0E8AH         LINE#         182
+  C:0E8CH         LINE#         183
+  C:0E8EH         LINE#         184
+  C:0E90H         LINE#         185
+  C:0E92H         LINE#         187
+  C:0E94H         LINE#         188
+  C:0E96H         LINE#         189
   -------         ENDPROC       INITIALIZESYSTEM
   -------         ENDMOD        MAIN
 
   -------         MODULE        RC522
   C:0000H         SYMBOL        _ICE_DUMMY_
-  C:0F3AH         PUBLIC        PcdAntennaOff
+  C:0F37H         PUBLIC        PcdAntennaOff
   D:0090H         PUBLIC        P1
   D:00B0H         PUBLIC        P3
   C:0C95H         PUBLIC        _PcdRequest
@@ -390,22 +390,22 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0C26H         PUBLIC        _PcdRead
   C:06AAH         PUBLIC        _PcdValue
   D:00B8H         PUBLIC        IP
-  C:0F01H         PUBLIC        _ClearBitMask
+  C:0EFEH         PUBLIC        _ClearBitMask
   C:0DB0H         PUBLIC        PcdReset
-  C:0F0FH         PUBLIC        PcdAntennaOn
-  C:0E31H         PUBLIC        PcdHalt
+  C:0F0CH         PUBLIC        PcdAntennaOn
+  C:0E2EH         PUBLIC        PcdHalt
   C:07D2H         PUBLIC        _PcdWrite
   C:0974H         PUBLIC        _PcdBakValue
   C:0A06H         PUBLIC        _PcdAuthState
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
   C:0CFFH         PUBLIC        _ReadRawRC
-  C:0EDFH         PUBLIC        _delay2
+  C:0EDCH         PUBLIC        _delay2
   B:0090H.4       PUBLIC        MF522_MISO
   B:0090H.5       PUBLIC        MF522_MOSI
   C:0D59H         PUBLIC        _WriteRawRC
   C:0B18H         PUBLIC        _PcdAnticoll
-  C:0F21H         PUBLIC        _SetBitMask
+  C:0F1EH         PUBLIC        _SetBitMask
   B:0090H.7       PUBLIC        MF522_SDA
   C:0533H         PUBLIC        _PcdComMF522
   D:00C8H         PUBLIC        T2CON
@@ -418,14 +418,14 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0006H         SYMBOL        x
   D:0004H         SYMBOL        y
   -------         ENDDO         
-  C:0EDFH         LINE#         8
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 8
+  C:0EDCH         LINE#         8
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 8
 
 
-  C:0EDFH         LINE#         9
-  C:0EDFH         LINE#         11
-  C:0EE8H         LINE#         12
-  C:0EFCH         LINE#         13
+  C:0EDCH         LINE#         9
+  C:0EDCH         LINE#         11
+  C:0EE5H         LINE#         12
+  C:0EF9H         LINE#         13
   -------         ENDPROC       _DELAY2
   -------         PROC          _PCDREQUEST
   D:0026H         SYMBOL        req_code
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0B86H         LINE#         87
   C:0B89H         LINE#         88
   C:0B92H         LINE#         89
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 9
 
 
   C:0B95H         LINE#         90
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0A8DH         LINE#         159
   C:0A8FH         LINE#         160
   -------         ENDPROC       _PCDAUTHSTATE
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 10
 
 
   -------         PROC          _PCDREAD
@@ -599,7 +599,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0007H         SYMBOL        dd_mode
   D:0026H         SYMBOL        addr
   D:0027H         SYMBOL        pValue
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 11
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 11
 
 
   -------         DO            
@@ -659,7 +659,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:09A3H         LINE#         300
   C:09A5H         LINE#         301
   C:09A7H         LINE#         302
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 12
 
 
   C:09A9H         LINE#         303
@@ -685,14 +685,14 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   D:0027H         SYMBOL        unLen
   D:0029H         SYMBOL        ucComMF522Buf
   -------         ENDDO         
-  C:0E31H         LINE#         332
-  C:0E31H         LINE#         333
-  C:0E31H         LINE#         338
-  C:0E34H         LINE#         339
-  C:0E37H         LINE#         340
-  C:0E49H         LINE#         342
-  C:0E6BH         LINE#         344
-  C:0E6DH         LINE#         345
+  C:0E2EH         LINE#         332
+  C:0E2EH         LINE#         333
+  C:0E2EH         LINE#         338
+  C:0E31H         LINE#         339
+  C:0E34H         LINE#         340
+  C:0E46H         LINE#         342
+  C:0E68H         LINE#         344
+  C:0E6AH         LINE#         345
   -------         ENDPROC       PCDHALT
   C:0BACH         SYMBOL        L?0139
   -------         PROC          L?0138
@@ -719,7 +719,7 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0BF6H         LINE#         362
   C:0BFBH         LINE#         363
   C:0BFDH         LINE#         364
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 13
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 13
 
 
   C:0BFDH         LINE#         365
@@ -730,21 +730,18 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0DB0H         LINE#         374
   C:0DB0H         LINE#         375
   C:0DB0H         LINE#         377
-  C:0DB2H         LINE#         379
-  C:0DB3H         LINE#         381
-  C:0DB5H         LINE#         383
-  C:0DB6H         LINE#         385
-  C:0DB8H         LINE#         387
-  C:0DBFH         LINE#         389
-  C:0DC6H         LINE#         391
-  C:0DC7H         LINE#         394
-  C:0DCEH         LINE#         395
-  C:0DD5H         LINE#         396
-  C:0DDCH         LINE#         397
-  C:0DE3H         LINE#         398
-  C:0DEAH         LINE#         399
-  C:0DF1H         LINE#         400
-  C:0DF3H         LINE#         401
+  C:0DB2H         LINE#         381
+  C:0DB4H         LINE#         385
+  C:0DB6H         LINE#         387
+  C:0DBDH         LINE#         389
+  C:0DC4H         LINE#         394
+  C:0DCBH         LINE#         395
+  C:0DD2H         LINE#         396
+  C:0DD9H         LINE#         397
+  C:0DE0H         LINE#         398
+  C:0DE7H         LINE#         399
+  C:0DEEH         LINE#         400
+  C:0DF0H         LINE#         401
   -------         ENDPROC       PCDRESET
   -------         PROC          L?0144
   -------         ENDPROC       L?0144
@@ -779,12 +776,12 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:0D50H         LINE#         434
   C:0D52H         LINE#         435
   C:0D54H         LINE#         436
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 14
-
-
   -------         ENDPROC       _READRAWRC
   C:0D55H         SYMBOL        L?0143
   -------         PROC          L?0142
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 14
+
+
   -------         ENDPROC       L?0142
   C:0D55H         SYMBOL        L?0143
   -------         PROC          _WRITERAWRC
@@ -823,30 +820,30 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   -------         DO            
   D:0006H         SYMBOL        tmp
   -------         ENDDO         
-  C:0F21H         LINE#         475
-  C:0F21H         LINE#         476
-  C:0F21H         LINE#         477
-  C:0F21H         LINE#         478
-  C:0F26H         LINE#         479
+  C:0F1EH         LINE#         475
+  C:0F1EH         LINE#         476
+  C:0F1EH         LINE#         477
+  C:0F1EH         LINE#         478
+  C:0F23H         LINE#         479
   -------         ENDPROC       _SETBITMASK
-  C:0EFDH         SYMBOL        L?0141
+  C:0EFAH         SYMBOL        L?0141
   -------         PROC          L?0140
   -------         ENDPROC       L?0140
-  C:0EFDH         SYMBOL        L?0141
+  C:0EFAH         SYMBOL        L?0141
   -------         PROC          _CLEARBITMASK
   D:0004H         SYMBOL        reg
   D:0003H         SYMBOL        mask
   -------         DO            
   D:0006H         SYMBOL        tmp
   -------         ENDDO         
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 15
+  C:0EFEH         LINE#         487
+  C:0EFEH         LINE#         488
+  C:0EFEH         LINE#         489
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 15
 
 
-  C:0F01H         LINE#         487
-  C:0F01H         LINE#         488
-  C:0F01H         LINE#         489
-  C:0F01H         LINE#         490
-  C:0F06H         LINE#         491
+  C:0EFEH         LINE#         490
+  C:0F03H         LINE#         491
   -------         ENDPROC       _CLEARBITMASK
   C:0519H         SYMBOL        L?0136
   C:052FH         SYMBOL        L?0137
@@ -899,12 +896,12 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   C:05BFH         LINE#         543
   C:05BFH         LINE#         544
   C:05C6H         LINE#         545
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 16
-
-
   C:05CEH         LINE#         546
   C:05CEH         LINE#         547
   C:05DDH         LINE#         548
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 16
+
+
   C:05E4H         LINE#         550
   C:05EDH         LINE#         551
   C:05EDH         LINE#         552
@@ -938,19 +935,19 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   -------         DO            
   D:0007H         SYMBOL        i
   -------         ENDDO         
-  C:0F0FH         LINE#         589
-  C:0F0FH         LINE#         590
-  C:0F0FH         LINE#         592
-  C:0F14H         LINE#         593
-  C:0F19H         LINE#         594
-  C:0F19H         LINE#         595
-  C:0F20H         LINE#         596
-  C:0F20H         LINE#         597
+  C:0F0CH         LINE#         589
+  C:0F0CH         LINE#         590
+  C:0F0CH         LINE#         592
+  C:0F11H         LINE#         593
+  C:0F16H         LINE#         594
+  C:0F16H         LINE#         595
+  C:0F1DH         LINE#         596
+  C:0F1DH         LINE#         597
   -------         ENDPROC       PCDANTENNAON
   -------         PROC          PCDANTENNAOFF
-  C:0F3AH         LINE#         603
-  C:0F3AH         LINE#         604
-  C:0F3AH         LINE#         605
+  C:0F37H         LINE#         603
+  C:0F37H         LINE#         604
+  C:0F37H         LINE#         605
   -------         ENDPROC       PCDANTENNAOFF
   -------         ENDMOD        RC522
 
@@ -959,11 +956,11 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   -------         ENDMOD        ?C?CLDOPTR
 
   -------         MODULE        ?C?CSTPTR
-BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/13/2020  21:13:19  PAGE 17
-
-
   C:08D2H         PUBLIC        ?C?CSTPTR
   -------         ENDMOD        ?C?CSTPTR
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  11/20/2020  14:03:20  PAGE 17
+
 
   -------         MODULE        ?C?CSTOPTR
   C:08E4H         PUBLIC        ?C?CSTOPTR
@@ -997,8 +994,8 @@ SYMBOL TABLE OF MODULE:  TEST522 (MAIN)
   -------         ENDMOD        ?C?CCASE
 
   -------         MODULE        PUTCHAR
-  C:0E9AH         PUBLIC        _PUTCHAR
+  C:0E97H         PUBLIC        _PUTCHAR
   -------         ENDMOD        PUTCHAR
 
-Program Size: data=80.1 xdata=0 code=3905
+Program Size: data=80.1 xdata=0 code=3902
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

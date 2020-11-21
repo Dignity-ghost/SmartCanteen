@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Nov 20 15:54:43 2020
+# Process ID: 21056
+# Current directory: E:/project/SmartCanteen/module_test/system_zynq/rfid_zynq.runs/rfid_axi_gpio_1_1_synth_1
+# Command line: vivado.exe -log rfid_axi_gpio_1_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rfid_axi_gpio_1_1.tcl
+# Log file: E:/project/SmartCanteen/module_test/system_zynq/rfid_zynq.runs/rfid_axi_gpio_1_1_synth_1/rfid_axi_gpio_1_1.vds
+# Journal file: E:/project/SmartCanteen/module_test/system_zynq/rfid_zynq.runs/rfid_axi_gpio_1_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rfid_axi_gpio_1_1.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP rfid_axi_gpio_1_1, cache-ID = da4af0bcdae5bb9f.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 20 15:54:52 2020...

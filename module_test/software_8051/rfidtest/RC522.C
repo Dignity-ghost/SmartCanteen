@@ -1,4 +1,4 @@
-#include <intrins.h>
+//#include <intrins.h>
 #include <reg52.h>
 #include "main.h"
 #include "mfrc522.h"
@@ -376,11 +376,11 @@ char PcdReset(void)
 	//unsigned char i;
     MF522_RST=1;
 
-		_nop_();                  
+//		_nop_();                  
 
     MF522_RST=0;
 
-		_nop_();                   
+//		_nop_();                   
 
     MF522_RST=1;
 
@@ -388,7 +388,7 @@ char PcdReset(void)
 	
     WriteRawRC(CommandReg,PCD_RESETPHASE);
 
-		_nop_();                  
+//		_nop_();                  
 	
     
     WriteRawRC(ModeReg,0x3D);            //和Mifare卡通讯，CRC初始值0x6363

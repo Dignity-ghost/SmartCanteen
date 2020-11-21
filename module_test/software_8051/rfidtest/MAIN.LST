@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 1   
+C51 COMPILER V9.60.0.0   MAIN                                                              11/20/2020 14:03:20 PAGE 1   
 
 
 C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
@@ -62,7 +62,7 @@ line level    source
   51   2              for (i = 0; i < 2; i++)
   52   2              {
   53   3                  temp = g_ucTempbuf[i];
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 2   
+C51 COMPILER V9.60.0.0   MAIN                                                              11/20/2020 14:03:20 PAGE 2   
 
   54   3                  printf("%X", temp);
   55   3              }
@@ -126,7 +126,7 @@ line level    source
  113   3                  status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //验证卡片密码
  114   3                  if (status != MI_OK)
  115   3                  {
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 3   
+C51 COMPILER V9.60.0.0   MAIN                                                              11/20/2020 14:03:20 PAGE 3   
 
  116   4                      continue;
  117   4                  }
@@ -190,7 +190,7 @@ line level    source
  175   1          TMOD = 0x21; //设T0为方式1，GATE=1；
  176   1          SCON = 0x50;
  177   1          TH1 = 0xFD; //波特率为2400bps
-C51 COMPILER V9.60.0.0   MAIN                                                              11/13/2020 21:13:19 PAGE 4   
+C51 COMPILER V9.60.0.0   MAIN                                                              11/20/2020 14:03:20 PAGE 4   
 
  178   1          TL1 = 0xFD;
  179   1          TH0 = 0;

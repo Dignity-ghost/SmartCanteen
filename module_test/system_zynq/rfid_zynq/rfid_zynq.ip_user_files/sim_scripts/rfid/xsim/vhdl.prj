@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/rfid/ip/rfid_axi_gpio_0_0/sim/rfid_axi_gpio_0_0.vhd" \
+"../../../bd/rfid/ip/rfid_axi_gpio_1_0/sim/rfid_axi_gpio_1_0.vhd" \
+"../../../bd/rfid/ip/rfid_axi_gpio_1_1/sim/rfid_axi_gpio_1_1.vhd" \
+"../../../bd/rfid/ip/rfid_axi_gpio_1_2/sim/rfid_axi_gpio_1_2.vhd" \
+"../../../bd/rfid/ip/rfid_axi_gpio_1_3/sim/rfid_axi_gpio_1_3.vhd" \
+"../../../bd/rfid/ip/rfid_rst_ps7_0_50M_0/sim/rfid_rst_ps7_0_50M_0.vhd" \
+
+nosort
