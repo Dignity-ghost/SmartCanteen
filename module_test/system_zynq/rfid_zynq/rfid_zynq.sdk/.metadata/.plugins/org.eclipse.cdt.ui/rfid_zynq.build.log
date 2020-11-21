@@ -1,8 +1,8 @@
-23:34:21 **** Incremental Build of configuration Debug for project rfid_zynq ****
+10:51:39 **** Incremental Build of configuration Debug for project rfid_zynq ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
 
-23:34:21 Build Finished (took 221ms)
+10:51:39 Build Finished (took 227ms)
 

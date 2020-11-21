@@ -1,14 +1,17 @@
-
+#include "xil_printf.h"
+#include "xparameters.h"
+#include "xgpio.h"
 #include "rfid_zynq.h"
 #include "mfrc522.h"
+#include "sleep.h"
 
 #define MAXRLEN 18
 
+extern XGpio miso, rst, mosi, sck, sda;
+
 void delay2(unsigned int z)
 {
-	unsigned int x,y;
-	for(x=z;x>0;x--)
-	for(y=110;y>0;y--);
+	usleep(z * 10);
 }
 
 
@@ -374,22 +377,26 @@ char PcdReset(void)
 {
 	//unsigned char i;
 //    MF522_RST=1;
-	XGpio_DiscreteWrite(&rst, LED_CHANNEL, 1);
+	XGpio_DiscreteWrite(&rst, 1, 1);
 
 //		_nop_();
+	delay2(10);
 
 //    MF522_RST=0;
-	XGpio_DiscreteWrite(&rst, LED_CHANNEL, 0);
+	XGpio_DiscreteWrite(&rst, 1, 0);
 
 //		_nop_();
+	delay2(10);
 
-    MF522_RST=1;
+//    MF522_RST=1;
+	XGpio_DiscreteWrite(&rst, 1, 1);
 
 		delay2(10);
 
     WriteRawRC(CommandReg,PCD_RESETPHASE);
 
 //		_nop_();
+    delay2(10);
 
 
     WriteRawRC(ModeReg,0x3D);            //ºÍMifare¿¨Í¨Ñ¶£¬CRC³õÊ¼Öµ0x6363
@@ -411,28 +418,45 @@ unsigned char ReadRawRC(unsigned char Address)
      unsigned char i, ucAddr;
      unsigned char ucResult=0;
 
-     MF522_SCK = 0;
-     MF522_SDA = 0;
+//     MF522_SCK = 0;
+//     MF522_SDA = 0;
+     XGpio_DiscreteWrite(&sck, 1, 0);
+     XGpio_DiscreteWrite(&sda, 1, 0);
+     //usleep(1);
      ucAddr = ((Address<<1)&0x7E)|0x80;
 
      for(i=8;i>0;i--)
      {
-         MF522_MOSI = ((ucAddr&0x80)==0x80);
-         MF522_SCK = 1;
+//         MF522_MOSI = ((ucAddr&0x80)==0x80);
+//         MF522_SCK = 1;
+    	 XGpio_DiscreteWrite(&mosi, 1, ((ucAddr&0x80)==0x80));
+    	 XGpio_DiscreteWrite(&sck, 1, 1);
+    	// usleep(1);
          ucAddr <<= 1;
-         MF522_SCK = 0;
+//         MF522_SCK = 0;
+         XGpio_DiscreteWrite(&sck, 1, 0);
+        // usleep(1);
      }
 
      for(i=8;i>0;i--)
      {
-         MF522_SCK = 1;
+//         MF522_SCK = 1;
+    	 XGpio_DiscreteWrite(&sck, 1, 1);
+    	 //usleep(1);
          ucResult <<= 1;
-         ucResult|=(bit)MF522_MISO;
-         MF522_SCK = 0;
+//         ucResult|=(bit)MF522_MISO;
+         ucResult |= (XGpio_DiscreteRead(&miso, 1) & 0x01) ;
+        // usleep(1);
+//         MF522_SCK = 0;
+         XGpio_DiscreteWrite(&sck, 1, 0);
+        // usleep(1);
      }
 
-     MF522_SDA = 1;
-     MF522_SCK = 1;
+//     MF522_SDA = 1;
+//     MF522_SCK = 1;
+     XGpio_DiscreteWrite(&sda, 1, 1);
+     XGpio_DiscreteWrite(&sck, 1, 1);
+     //usleep(1);
      return ucResult;
 }
 
@@ -445,27 +469,43 @@ void WriteRawRC(unsigned char Address, unsigned char value)
 {
     unsigned char i, ucAddr;
 
-    MF522_SCK = 0;
-    MF522_SDA = 0;
+//    MF522_SCK = 0;
+//    MF522_SDA = 0;
+    XGpio_DiscreteWrite(&sck, 1, 0);
+    XGpio_DiscreteWrite(&sda, 1, 0);
+    //usleep(1);
     ucAddr = ((Address<<1)&0x7E);
 
     for(i=8;i>0;i--)
     {
-        MF522_MOSI = ((ucAddr&0x80)==0x80);
-        MF522_SCK = 1;
+//        MF522_MOSI = ((ucAddr&0x80)==0x80);
+//        MF522_SCK = 1;
+    	XGpio_DiscreteWrite(&mosi, 1, ((ucAddr&0x80)==0x80));
+    	XGpio_DiscreteWrite(&sck, 1, 1);
+    	//usleep(1);
         ucAddr <<= 1;
-        MF522_SCK = 0;
+//        MF522_SCK = 0;
+        XGpio_DiscreteWrite(&sck, 1, 0);
+        usleep(1);
     }
 
     for(i=8;i>0;i--)
     {
-        MF522_MOSI = ((value&0x80)==0x80);
-        MF522_SCK = 1;
-        value <<= 1;
-        MF522_SCK = 0;
+//        MF522_MOSI = ((value&0x80)==0x80);
+//        MF522_SCK = 1;
+    	XGpio_DiscreteWrite(&mosi, 1, ((value&0x80)==0x80));
+    	XGpio_DiscreteWrite(&sck, 1, 1);
+    	usleep(1);
+    	value <<= 1;
+//        MF522_SCK = 0;
+        XGpio_DiscreteWrite(&sck, 1, 0);
+        usleep(1);
     }
-    MF522_SDA = 1;
-    MF522_SCK = 1;
+//    MF522_SDA = 1;
+//    MF522_SCK = 1;
+    XGpio_DiscreteWrite(&sda, 1, 1);
+    XGpio_DiscreteWrite(&sck, 1, 1);
+    usleep(1);
 }
 
 /////////////////////////////////////////////////////////////////////
