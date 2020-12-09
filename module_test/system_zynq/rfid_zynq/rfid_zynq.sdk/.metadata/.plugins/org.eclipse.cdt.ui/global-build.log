@@ -7289,3 +7289,1792 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+13:38:55 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:40:21 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:113:17: error: too many arguments to function 'print'
+                 print("%X", temp);
+                 ^~~~~
+In file included from ../src/rfid_zynq.c:50:0:
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+13:40:39 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2688	  23440	 105880	  19d98	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:40:46 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:114:17: error: too few arguments to function 'print'
+                 print()
+                 ^~~~~
+In file included from ../src/rfid_zynq.c:50:0:
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/rfid_zynq.c:115:13: error: expected ';' before '}' token
+             }
+             ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+13:40:53 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:115:13: error: expected ';' before '}' token
+             }
+             ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+13:40:58 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2688	  23440	 105880	  19d98	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:41:01 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:41:34 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2688	  23440	 105880	  19d98	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:41:40 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2688	  23440	 105880	  19d98	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:41:44 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:41:49 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:41:55 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:41:59 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:43:17 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:43:19 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:43:42 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:43:47 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:43:58 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:44:13 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:44:23 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:47:56 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:140:13: error: expected ';' before 'status'
+             status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
+             ^~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+13:48:02 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:48:04 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:49:32 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:123:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%s",status)
+     ^~~~~~
+../src/rc522.c:123:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:123:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c:123:14: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     printf("%s",status)
+             ~^
+             %d
+../src/rc522.c:124:5: error: expected ';' before 'if'
+     if ((status == MI_OK) && (unLen == 0x18))
+     ^~
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:336:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:130:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/rc522.o] Error 1
+13:49:34 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:123:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%s",status);
+     ^~~~~~
+../src/rc522.c:123:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:123:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c:123:14: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     printf("%s",status);
+             ~^
+             %d
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:336:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79840	   2688	  23440	 105968	  19df0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:49:37 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:49:56 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:336:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:49:59 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:50:50 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:52:19 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:124:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%s",status);
+     ^~~~~~
+../src/rc522.c:124:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:124:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c:124:14: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+     printf("%s",status);
+             ~^
+             %d
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79840	   2688	  23440	 105968	  19df0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:52:22 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:52:49 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:124:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%c",status);
+     ^~~~~~
+../src/rc522.c:124:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:124:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80096	   2688	  23440	 106224	  19ef0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:52:51 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:55:24 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:55:33 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80096	   2688	  23440	 106224	  19ef0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:55:36 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:56:12 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79856	   2688	  23440	 105984	  19e00	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:56:14 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:56:44 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79856	   2688	  23440	 105984	  19e00	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:56:48 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79856	   2688	  23440	 105984	  19e00	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:56:52 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:57:16 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:57:26 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:124:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%c",status);
+     ^~~~~~
+../src/rc522.c:124:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:124:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80096	   2688	  23440	 106224	  19ef0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:57:28 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:58:03 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:124:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("\ngetting status");
+     ^~~~~~
+../src/rc522.c:124:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:124:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79856	   2688	  23440	 105984	  19e00	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:58:06 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:58:45 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdSelect':
+../src/rc522.c:124:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("%u", unLen);
+     ^~~~~~
+../src/rc522.c:124:5: warning: incompatible implicit declaration of built-in function 'printf'
+../src/rc522.c:124:5: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79840	   2688	  23440	 105968	  19df0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+13:58:48 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+13:59:15 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:15:06 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:15:23 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:16:02 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79856	   2688	  23440	 105984	  19e00	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:16:05 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:17:13 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79856	   2688	  23440	 105984	  19e00	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:17:15 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:17:40 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:20:32 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+../src/rc522.c: In function 'ReadRawRC':
+../src/rc522.c:450:23: error: 'bit' undeclared (first use in this function)
+          ucResult |= (bit)(XGpio_DiscreteRead(&miso, 1) & 0x01) ;
+                       ^~~
+../src/rc522.c:450:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:29: src/rc522.o] Error 1
+14:20:35 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:29:10 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:34: error: lvalue required as left operand of assignment
+             XPAR_GPIO_0_BASEADDR = 1;
+                                  ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:30:48 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:32:45 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *XPAR_GPIO_0_BASEADDR = 1;
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:33:00 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:34:44 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:36: error: expected expression before ')' token
+             *(XPAR_GPIO_0_BASEADDR+) = 1;
+                                    ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:35:38 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:35:46 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 0001;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:35:51 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = h'0001;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:135:40: warning: missing terminating ' character
+             *(XPAR_GPIO_0_BASEADDR) = h'0001;
+                                        ^
+../src/rfid_zynq.c:135:40: error: missing terminating ' character
+             *(XPAR_GPIO_0_BASEADDR) = h'0001;
+                                        ^~~~~~
+../src/rfid_zynq.c:135:39: error: 'h' undeclared (first use in this function)
+             *(XPAR_GPIO_0_BASEADDR) = h'0001;
+                                       ^
+../src/rfid_zynq.c:135:39: note: each undeclared identifier is reported only once for each function it appears in
+../src/rfid_zynq.c:138:13: error: expected ';' before 'if'
+             if (status != MI_OK)
+             ^~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:39:36 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:44:50 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR+1) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:46:16 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c:49:10: fatal error: iostream: No such file or directory
+ #include <iostream>
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:46:33 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c:49:10: fatal error: iostream: No such file or directory
+ #include "iostream"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:46:37 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR+1) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:46:49 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:14: error: invalid type argument of unary '*' (have 'int')
+             **(XPAR_GPIO_0_BASEADDR+1) = 1;
+              ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:49:35 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:16: error: expected identifier before '(' token
+             1->(XPAR_GPIO_0_BASEADDR+1);
+                ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:49:39 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:16: error: expected identifier before '*' token
+             1->*(XPAR_GPIO_0_BASEADDR+1);
+                ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:49:41 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:135:16: error: expected identifier before '(' token
+             1->(XPAR_GPIO_0_BASEADDR+1);
+                ^
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:51:21 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:136:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR+1) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:51:26 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+../src/rfid_zynq.c: In function 'main':
+../src/rfid_zynq.c:136:13: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^
+../src/rfid_zynq.c:136:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:51:29 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+In file included from ../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../src/rfid_zynq.c:50:
+../src/rfid_zynq.c: In function 'main':
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xparameters.h:227:30: error: expected identifier or '(' before numeric constant
+ #define XPAR_GPIO_0_BASEADDR 0x41200000
+                              ^
+../src/rfid_zynq.c:135:27: note: in expansion of macro 'XPAR_GPIO_0_BASEADDR'
+             volatile u32 *XPAR_GPIO_0_BASEADDR
+                           ^~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:51:31 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+In file included from ../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../src/rfid_zynq.c:50:
+../src/rfid_zynq.c: In function 'main':
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xparameters.h:227:30: error: expected identifier or '(' before numeric constant
+ #define XPAR_GPIO_0_BASEADDR 0x41200000
+                              ^
+../src/rfid_zynq.c:135:27: note: in expansion of macro 'XPAR_GPIO_0_BASEADDR'
+             volatile u32 *XPAR_GPIO_0_BASEADDR;
+                           ^~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:136:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:52:22 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+In file included from ../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../src/rfid_zynq.c:50:
+../src/rfid_zynq.c: In function 'main':
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xparameters.h:227:30: error: expected identifier or '(' before numeric constant
+ #define XPAR_GPIO_0_BASEADDR 0x41200000
+                              ^
+../src/rfid_zynq.c:135:27: note: in expansion of macro 'XPAR_GPIO_0_BASEADDR'
+             volatile u32 *XPAR_GPIO_0_BASEADDR;
+                           ^~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:136:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:138:52: error: 'Addr' undeclared (first use in this function); did you mean 'ldr'?
+          volatile u32 *LocalAddr = (volatile u32 *)Addr;
+                                                    ^~~~
+                                                    ldr
+../src/rfid_zynq.c:138:52: note: each undeclared identifier is reported only once for each function it appears in
+../src/rfid_zynq.c:139:23: error: 'Value' undeclared (first use in this function); did you mean '_glue'?
+          *LocalAddr = Value;
+                       ^~~~~
+                       _glue
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:52:26 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+In file included from ../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../src/rfid_zynq.c:50:
+../src/rfid_zynq.c: In function 'main':
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xparameters.h:227:30: error: expected identifier or '(' before numeric constant
+ #define XPAR_GPIO_0_BASEADDR 0x41200000
+                              ^
+../src/rfid_zynq.c:135:27: note: in expansion of macro 'XPAR_GPIO_0_BASEADDR'
+             volatile u32 *XPAR_GPIO_0_BASEADDR;
+                           ^~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:136:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:139:23: error: 'Value' undeclared (first use in this function); did you mean '_glue'?
+          *LocalAddr = Value;
+                       ^~~~~
+                       _glue
+../src/rfid_zynq.c:139:23: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:52:28 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+In file included from ../../rfid_zynq_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../src/rfid_zynq.c:50:
+../src/rfid_zynq.c: In function 'main':
+../../rfid_zynq_bsp/ps7_cortexa9_0/include/xparameters.h:227:30: error: expected identifier or '(' before numeric constant
+ #define XPAR_GPIO_0_BASEADDR 0x41200000
+                              ^
+../src/rfid_zynq.c:135:27: note: in expansion of macro 'XPAR_GPIO_0_BASEADDR'
+             volatile u32 *XPAR_GPIO_0_BASEADDR;
+                           ^~~~~~~~~~~~~~~~~~~~
+../src/rfid_zynq.c:136:13: error: invalid type argument of unary '*' (have 'int')
+             *(XPAR_GPIO_0_BASEADDR) = 1;
+             ^~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/rfid_zynq.o] Error 1
+14:52:33 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79840	   2688	  23440	 105968	  19df0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+14:27:24 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:27:33 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+14:31:21 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:38:05 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:38:17 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:38:30 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:38:46 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:38:55 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:38:59 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:39:03 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:39:32 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:39:36 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:39:42 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:39:57 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:39:58 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:41:34 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:41:45 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:42:05 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:42:08 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:42:33 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rc522.d" -MT"src/rc522.o" -o "src/rc522.o" "../src/rc522.c"
+../src/rc522.c: In function 'PcdHalt':
+../src/rc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/rc522.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79776	   2688	  23440	 105904	  19db0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:42:35 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+15:43:13 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:45:34 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79752	   2688	  23440	 105880	  19d98	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:52:11 **** Auto Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/rfid_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfid_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../rfid_zynq_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rfid_zynq.d" -MT"src/rfid_zynq.o" -o "src/rfid_zynq.o" "../src/rfid_zynq.c"
+'Finished building: ../src/rfid_zynq.c'
+' '
+'Building target: rfid_zynq.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../rfid_zynq_bsp/ps7_cortexa9_0/lib -o "rfid_zynq.elf"  ./src/platform.o ./src/rc522.o ./src/rfid_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rfid_zynq.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size rfid_zynq.elf  |tee "rfid_zynq.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79760	   2688	  23440	 105888	  19da0	rfid_zynq.elf
+'Finished building: rfid_zynq.elf.size'
+' '
+15:52:21 **** Incremental Build of configuration Debug for project rfid_zynq ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

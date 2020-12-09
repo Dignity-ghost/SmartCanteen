@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec  4 20:55:26 2020
+# Process ID: 8948
+# Current directory: E:/project/SmartCanteen/cateen/cateen.runs/cateen_axi_gpio_1_2_synth_1
+# Command line: vivado.exe -log cateen_axi_gpio_1_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cateen_axi_gpio_1_2.tcl
+# Log file: E:/project/SmartCanteen/cateen/cateen.runs/cateen_axi_gpio_1_2_synth_1/cateen_axi_gpio_1_2.vds
+# Journal file: E:/project/SmartCanteen/cateen/cateen.runs/cateen_axi_gpio_1_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cateen_axi_gpio_1_2.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/cateen_ip/hx711_zynq_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP cateen_axi_gpio_1_2, cache-ID = da4af0bcdae5bb9f.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  4 20:55:38 2020...

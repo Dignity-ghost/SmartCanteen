@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../../cateen.srcs/sources_1/bd/cateen/ip/cateen_rst_ps7_0_50M_0/sim/cateen_rst_ps7_0_50M_0.vhd" \
+"../../../../cateen.srcs/sources_1/bd/cateen/ip/cateen_axi_gpio_0_0/sim/cateen_axi_gpio_0_0.vhd" \
+"../../../../cateen.srcs/sources_1/bd/cateen/ip/cateen_axi_gpio_1_0/sim/cateen_axi_gpio_1_0.vhd" \
+"../../../../cateen.srcs/sources_1/bd/cateen/ip/cateen_axi_gpio_1_1/sim/cateen_axi_gpio_1_1.vhd" \
+"../../../../cateen.srcs/sources_1/bd/cateen/ip/cateen_axi_gpio_1_2/sim/cateen_axi_gpio_1_2.vhd" \
+"../../../../cateen.srcs/sources_1/bd/cateen/ip/cateen_axi_gpio_1_3/sim/cateen_axi_gpio_1_3.vhd" \
+
+nosort

@@ -7597,3 +7597,43 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-25
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-11-13 22:04:39.982
 !MESSAGE XSCT command with result: [disconnect tcfchan#11], Result: [null, ]. Thread: Thread-785
+!SESSION 2020-12-06 14:29:21.012 -----------------------------------------------
+eclipse.buildId=2018.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk
+
+!ENTRY org.eclipse.ui 2 0 2020-12-06 14:29:23.005
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-12-06 14:29:23.005
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2020-12-06 14:29:23.675
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-12-06 14:29:23.675
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.620
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.621
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.832
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.833
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.835
+!MESSAGE XSCT Command: [setws E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.837
+!MESSAGE XSCT command with result: [setws E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:31.854
+!MESSAGE XSCT Command: [::hsi::utils::openhw E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper_hw_platform_0/system.hdf], Thread: Worker-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-12-06 14:29:34.206
+!MESSAGE XSCT command with result: [::hsi::utils::openhw E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-5

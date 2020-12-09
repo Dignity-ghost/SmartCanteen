@@ -6,7 +6,7 @@
 <Project Version="7" Minor="39" Path="e:/project/smartcanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project/hx711_package_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="5562834d494e473d9c861ccb0852b8ac"/>
+    <Option Name="Id" Val="12d341f1eb1747348c8927c335a0813e"/>
     <Option Name="Part" Val="xc7z020clg400-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>

@@ -1,0 +1,21 @@
+/*
+ * cateen.h
+ *
+ *  Created on: 2020Äê12ÔÂ4ÈÕ
+ *      Author: 18362
+ */
+
+#ifndef SRC_CATEEN_H_
+#define SRC_CATEEN_H_
+
+#define MF522_MISO_ID   	1
+#define MF522_RST_ID  		2
+#define MF522_MOSI_ID  		0
+#define MF522_SCK_ID   		3
+#define MF522_SDA_ID   		4
+
+void Pcd_Init(void);
+signed int get_gram();
+void Card_Update(struct Card);
+
+#endif /* SRC_CATEEN_H_ */

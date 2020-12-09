@@ -2,14 +2,16 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Nov  7 15:45:26 2020
-# Process ID: 12820
+# Start of session at: Sun Dec  6 16:13:20 2020
+# Process ID: 21972
 # Current directory: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15416 E:\project\SmartCanteen\module_test\system_zynq\hx711_zynq\hx711_zynq.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10944 E:\project\SmartCanteen\module_test\system_zynq\hx711_zynq\hx711_zynq.xpr
 # Log file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/vivado.log
 # Journal file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.xpr
 update_compile_order -fileset sources_1
-launch_sdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project

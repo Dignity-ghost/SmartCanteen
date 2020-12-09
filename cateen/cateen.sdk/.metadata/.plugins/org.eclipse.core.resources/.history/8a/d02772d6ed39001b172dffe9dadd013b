@@ -1,0 +1,40 @@
+/*
+ * cateen.h
+ *
+ *  Created on: 2020��12��4��
+ *      Author: 18362
+ */
+
+#ifndef SRC_CATEEN_H_
+#define SRC_CATEEN_H_
+
+#define MF522_MISO_ID   	1
+#define MF522_RST_ID  		2
+#define MF522_MOSI_ID  		0
+#define MF522_SCK_ID   		3
+#define MF522_SDA_ID   		4
+
+struct Card{
+	unsigned char Id[20];
+	unsigned char Data_info[4];
+	unsigned char Data_Addr[1];
+	unsigned char Data[16];
+	int Flag_Sel;
+	int Flag_PorM; //1 is Plus or 0 is Minus
+	int Flag_Done;
+};
+
+void Pcd_Init(void);
+int Pcd_Sel(unsigned char []);
+int Pcd_SetValue(unsigned char [],stuct Card);
+
+signed int get_gram();
+struct Card Card_Update(struct Card);
+struct Card Card_SetData(struct Card, unsigned int, unsigned char []);
+void Card_SetSel(struct Card, int);
+void Card_SetPorM(struct Card, int);
+void Card_SetDone(struct Card, int);
+
+void Print_Char(unsigned char [], unsigned int);
+
+#endif /* SRC_CATEEN_H_ */

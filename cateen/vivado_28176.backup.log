@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  6 21:28:22 2020
+# Process ID: 28176
+# Current directory: E:/project/SmartCanteen/cateen
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29652 E:\project\SmartCanteen\cateen\cateen.xpr
+# Log file: E:/project/SmartCanteen/cateen/vivado.log
+# Journal file: E:/project/SmartCanteen/cateen\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/SmartCanteen/cateen/cateen.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/cateen_ip/hx711_zynq_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 835.543 ; gain = 205.270
+update_compile_order -fileset sources_1
+launch_sdk -workspace E:/project/SmartCanteen/cateen/cateen.sdk -hwspec E:/project/SmartCanteen/cateen/cateen.sdk/cateen_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/project/SmartCanteen/cateen/cateen.sdk -hwspec E:/project/SmartCanteen/cateen/cateen.sdk/cateen_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  6 23:15:24 2020...

@@ -106,11 +106,12 @@ int main()
                 continue;
             }
 
-            printf("type:");
+            printf("\nType is :");
             for (i = 0; i < 2; i++)
             {
                 temp = g_ucTempbuf[i];
                 printf("%X", temp);
+
             }
 
             status = PcdAnticoll(g_ucTempbuf); //·À³å×²
@@ -121,7 +122,7 @@ int main()
 
             ////////ÒÔÏÂÎª³¬¼¶ÖÕ¶Ë´òÓ¡³öµÄÄÚÈÝ////////////////////////
 
-            printf("id:"); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
+            printf("\nId is :"); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
             for (i = 0; i < 4; i++)
             {
                 temp = g_ucTempbuf[i];
@@ -131,10 +132,17 @@ int main()
             ///////////////////////////////////////////////////////////
 
             status = PcdSelect(g_ucTempbuf); //Ñ¡¶¨¿¨Æ¬
+
+        	//volatile u32 *LocalAddr = (volatile u32 *)XPAR_GPIO_0_BASEADDR;
+        	//*LocalAddr = 1;
+
+            //printf("\nBegin to choose %c",status);
+
             if (status != MI_OK)
             {
                 continue;
             }
+            //print("Card locked");
 
             status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
             if (status != MI_OK)
@@ -191,7 +199,7 @@ int main()
                 {
                     continue;
                 }
-                printf("¿¨¶Á¿é£º"); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
+                printf("\nread card: "); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
                 for (i = 0; i < 16; i++)
                 {
                     temp = g_ucTempbuf[i];

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Dec  6 13:24:04 2020
+# Process ID: 18788
+# Current directory: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21280 E:\project\SmartCanteen\module_test\system_zynq\hx711_zynq\hx711_zynq.xpr
+# Log file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/vivado.log
+# Journal file: E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 832.629 ; gain = 197.230
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name hx711_package_v1_0_project -directory E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'e:/project/smartcanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.tmp/hx711_package_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/software/vivado2018/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 928.695 ; gain = 22.793
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/project/SmartCanteen/module_test/system_zynq/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/rtl/ad.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/hdl/hx711_package_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [e:/project/SmartCanteen/module_test/system_zynq/ip_repo/hx711_package_1.0/hdl/hx711_package_v1_0.v:]
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 966.277 ; gain = 60.375
+update_compile_order -fileset sources_1
+close_project
+launch_sdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk -hwspec E:/project/SmartCanteen/module_test/system_zynq/hx711_zynq/hx711_zynq.sdk/hx711_zynq_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  6 15:19:36 2020...
