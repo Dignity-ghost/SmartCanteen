@@ -479,3 +479,6 @@ dismissDialog("Launch SDK"); // aa (cp)
 // Tcl Message: launch_sdk -workspace E:/project/SmartCanteen/cateen/cateen.sdk -hwspec E:/project/SmartCanteen/cateen/cateen.sdk/cateen_wrapper.hdf 
 // Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace E:/project/SmartCanteen/cateen/cateen.sdk -hwspec E:/project/SmartCanteen/cateen/cateen.sdk/cateen_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
 // [GUI Memory]: 148 MB (+4212kb) [00:07:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,456 MB. GUI used memory: 87 MB. Current time: 12/11/20, 7:57:46 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,456 MB. GUI used memory: 81 MB. Current time: 12/11/20, 8:27:46 PM GMT+08:00
+// HMemoryUtils.trashcanNow. Engine heap size: 1,456 MB. GUI used memory: 81 MB. Current time: 12/11/20, 8:57:46 PM GMT+08:00
