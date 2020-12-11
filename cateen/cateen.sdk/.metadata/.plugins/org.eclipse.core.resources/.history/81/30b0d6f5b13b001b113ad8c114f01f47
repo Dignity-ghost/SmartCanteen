@@ -110,7 +110,6 @@ int main()
     unsigned char data_W[16];
     unsigned char addr_W = 0x04;
     unsigned char status, i;
-    unsigned int flag;
     unsigned int temp;
     PcdReset();
     PcdAntennaOff();
@@ -161,12 +160,7 @@ int main()
         }
 
 
-        flag = get_gram(gram);
-        if (flag != 1)
-        {
-            continue;
-        }
-
+        get_gram(gram);
         dataGen(*gram, data_W, addr_W);
         status = PcdWrite(addr_W, data_W); //Ð´¿é
         if (status != MI_OK)
@@ -187,7 +181,6 @@ int main()
             temp = g_ucTempbuf[i];
             printf("%X", temp);
         }
-        printf("\n");
         
 //        if (status != MI_OK)
 //        {
@@ -232,12 +225,12 @@ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr) {
 	*(data_O + 13) = ~ addr;
 	*(data_O + 14) = addr;
 	*(data_O + 15) = ~ addr;
-//	printf("\n");
-//	for (int i = 0; i < 16; i++)
-//	        {
-//	            printf("%X", *(data_O + i));
-//	        }
-//	printf("\n");
+	printf("\n");
+	for (int i = 0; i < 16; i++)
+	        {
+	            printf("%X", *(data_O + i));
+	        }
+	printf("\n");
 }
 
 
