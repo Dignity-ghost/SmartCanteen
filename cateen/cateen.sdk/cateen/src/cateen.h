@@ -14,33 +14,8 @@
 #define MF522_SCK_ID   		3
 #define MF522_SDA_ID   		4
 
-struct Card{
-	unsigned char Id[20];
-	unsigned char Data_info[4];
-	unsigned char Data_Addr[1];
-	unsigned char Data[16];
-	int Flag_Sel;
-	int Flag_PorM; //1 is Plus or 0 is Minus
-	int Flag_Done;
-};
+int get_gram(unsigned int * gram);
 
-struct Card_Func{
-	struct Card card;
-	unsigned int op;
-
-};
-
-void Pcd_Init(void);
-int Pcd_Sel(unsigned char []);
-struct Card_Func Pcd_SetValue(unsigned char [],struct Card);
-
-signed int get_gram();
-void Card_Update(struct Card *card);
-struct Card Card_SetData(struct Card, unsigned int, unsigned char []);
-void Card_SetSel(struct Card, int);
-void Card_SetPorM(struct Card, int);
-void Card_SetDone(struct Card, int);
-
-void Print_Char(unsigned char [], unsigned int);
+void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
 
 #endif /* SRC_CATEEN_H_ */

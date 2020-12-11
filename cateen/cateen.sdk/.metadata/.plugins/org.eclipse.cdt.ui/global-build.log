@@ -15525,3 +15525,2526 @@ arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
   81472	   2736	  23456	 107664	  1a490	cateen.elf
 'Finished building: cateen.elf.size'
 ' '
+19:50:28 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:112:9: warning: implicit declaration of function 'InitializeSystem' [-Wimplicit-function-declaration]
+         InitializeSystem();
+         ^~~~~~~~~~~~~~~~
+../src/cateen.c:223:17: error: 'LED_GREEN' undeclared (first use in this function)
+                 LED_GREEN = 0;
+                 ^~~~~~~~~
+../src/cateen.c:223:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:284:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:284:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:258:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:257:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:50:56 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:112:9: warning: implicit declaration of function 'InitializeSystem' [-Wimplicit-function-declaration]
+         InitializeSystem();
+         ^~~~~~~~~~~~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:279:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:279:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:253:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:252:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/cateen.o: In function `main':
+E:\project\SmartCanteen\cateen\cateen.sdk\cateen\Debug/../src/cateen.c:112: undefined reference to `InitializeSystem'
+E:\project\SmartCanteen\cateen\cateen.sdk\cateen\Debug/../src/cateen.c:122: undefined reference to `InitializeSystem'
+E:\project\SmartCanteen\cateen\cateen.sdk\cateen\Debug/../src/cateen.c:175: undefined reference to `InitializeSystem'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: cateen.elf] Error 1
+19:51:09 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:173:21: warning: implicit declaration of function 'InitializeSystem' [-Wimplicit-function-declaration]
+                     InitializeSystem();
+                     ^~~~~~~~~~~~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:277:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:277:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:251:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:250:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/cateen.o: In function `main':
+E:\project\SmartCanteen\cateen\cateen.sdk\cateen\Debug/../src/cateen.c:173: undefined reference to `InitializeSystem'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:41: cateen.elf] Error 1
+19:51:25 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:276:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:276:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:250:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:249:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82160	   2736	  23456	 108352	  1a740	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:52:17 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:276:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:276:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:250:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:249:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82160	   2736	  23456	 108352	  1a740	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:52:30 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:276:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:276:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:250:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:249:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82160	   2736	  23456	 108352	  1a740	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:52:36 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:276:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:276:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:250:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:249:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82160	   2736	  23456	 108352	  1a740	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:52:53 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:276:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:276:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:250:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:249:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  82160	   2736	  23456	 108352	  1a740	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:53:35 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:215:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:215:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:189:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:188:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81688	   2736	  23456	 107880	  1a568	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:56:45 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:215:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:215:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:189:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:188:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: At top level:
+../src/cateen.c:229:62: warning: 'struct Card' declared inside parameter list will not be visible outside of this definition or declaration
+ struct Card_Func Pcd_SetValue(unsigned char buffer[], struct Card card){
+                                                              ^~~~
+../src/cateen.c:229:67: error: parameter 2 ('card') has incomplete type
+ struct Card_Func Pcd_SetValue(unsigned char buffer[], struct Card card){
+                                                                   ^~~~
+../src/cateen.c:229:18: error: return type is an incomplete type
+ struct Card_Func Pcd_SetValue(unsigned char buffer[], struct Card card){
+                  ^~~~~~~~~~~~
+../src/cateen.c: In function 'Pcd_SetValue':
+../src/cateen.c:232:22: error: storage size of 'Operaotr' isn't known
+     struct Card_Func Operaotr;
+                      ^~~~~~~~
+../src/cateen.c:248:21: warning: implicit declaration of function 'Card_SetData' [-Wimplicit-function-declaration]
+     Operaotr.card = Card_SetData(card, 1000, Addr0);
+                     ^~~~~~~~~~~~
+../src/cateen.c:275:12: warning: 'return' with a value, in function returning void
+     return Operaotr;
+            ^~~~~~~~
+../src/cateen.c:229:18: note: declared here
+ struct Card_Func Pcd_SetValue(unsigned char buffer[], struct Card card){
+                  ^~~~~~~~~~~~
+../src/cateen.c:232:22: warning: unused variable 'Operaotr' [-Wunused-variable]
+     struct Card_Func Operaotr;
+                      ^~~~~~~~
+../src/cateen.c: At top level:
+../src/cateen.c:279:25: warning: 'struct Card' declared inside parameter list will not be visible outside of this definition or declaration
+ void Card_Update(struct Card * card){
+                         ^~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:282:7: error: dereferencing pointer to incomplete type 'struct Card'
+   card->Data[num] = card->Data_info[num];
+       ^~
+../src/cateen.c: At top level:
+../src/cateen.c:308:38: error: parameter 1 ('card') has incomplete type
+ struct Card Card_SetData(struct Card card, unsigned int data_input, unsigned char address_input[]){
+                                      ^~~~
+../src/cateen.c:308:13: error: return type is an incomplete type
+ struct Card Card_SetData(struct Card card, unsigned int data_input, unsigned char address_input[]){
+             ^~~~~~~~~~~~
+../src/cateen.c:308:13: warning: conflicting types for 'Card_SetData'
+../src/cateen.c:248:21: note: previous implicit declaration of 'Card_SetData' was here
+     Operaotr.card = Card_SetData(card, 1000, Addr0);
+                     ^~~~~~~~~~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:332:12: warning: 'return' with a value, in function returning void
+     return card;
+            ^~~~
+../src/cateen.c:308:13: note: declared here
+ struct Card Card_SetData(struct Card card, unsigned int data_input, unsigned char address_input[]){
+             ^~~~~~~~~~~~
+../src/cateen.c: At top level:
+../src/cateen.c:336:30: error: parameter 1 ('card') has incomplete type
+ void Card_SetSel(struct Card card, int bit){
+                              ^~~~
+../src/cateen.c:340:31: error: parameter 1 ('card') has incomplete type
+ void Card_SetPorM(struct Card card, int bit){
+                               ^~~~
+../src/cateen.c:344:31: error: parameter 1 ('card') has incomplete type
+ void Card_SetDone(struct Card card, int bit){
+                               ^~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:56:47 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building file: ../src/mfrc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mfrc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mfrc522.d" -MT"src/mfrc522.o" -o "src/mfrc522.o" "../src/mfrc522.c"
+../src/mfrc522.c: In function 'PcdHalt':
+../src/mfrc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/mfrc522.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79440	   2736	  23456	 105632	  19ca0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:57:36 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:177:2: error: 'gram' undeclared (first use in this function)
+  gram   = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
+  ^~~~
+../src/cateen.c:177:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/cateen.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:57:42 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:177:2: error: 'gram' undeclared (first use in this function)
+  gram   = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
+  ^~~~
+../src/cateen.c:177:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/cateen.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:59:02 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:177:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gram'
+  gram   = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
+  ^~~~
+../src/cateen.c:177:2: error: 'gram' undeclared (first use in this function)
+../src/cateen.c:177:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/cateen.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:59:06 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:177:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gram'
+  gram = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
+  ^~~~
+../src/cateen.c:177:2: error: 'gram' undeclared (first use in this function)
+../src/cateen.c:177:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/cateen.c:179:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:59:22 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79440	   2736	  23440	 105616	  19c90	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:02:12 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79440	   2736	  23440	 105616	  19c90	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:02:20 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79440	   2736	  23440	 105616	  19c90	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:04:42 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+In file included from ../../cateen_bsp/ps7_cortexa9_0/include/sleep.h:52:0,
+                 from ../src/cateen.c:53:
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h: In function 'dataGen':
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:114:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:131:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:148:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:165:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:183:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:201:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:220:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:242:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:287:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:301:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:315:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../../cateen_bsp/ps7_cortexa9_0/include/xil_io.h:329:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from ../../cateen_bsp/ps7_cortexa9_0/include/xstatus.h:51:0,
+                 from ../../cateen_bsp/ps7_cortexa9_0/include/hx711_zynq.h:8,
+                 from ../src/cateen.c:56:
+../../cateen_bsp/ps7_cortexa9_0/include/xil_assert.h:72:12: error: storage class specified for parameter 'Xil_AssertStatus'
+ extern u32 Xil_AssertStatus;
+            ^~~~~~~~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xil_assert.h:73:12: error: storage class specified for parameter 'Xil_AssertWait'
+ extern s32 Xil_AssertWait;
+            ^~~~~~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xil_assert.h:74:13: error: storage class specified for parameter 'Xil_Assert'
+ extern void Xil_Assert(const char8 *File, s32 Line);
+             ^~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xil_assert.h:81:16: error: storage class specified for parameter 'Xil_AssertCallback'
+ typedef void (*Xil_AssertCallback) (const char8 *File, s32 Line);
+                ^~~~~~~~~~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xil_assert.h:182:28: error: expected declaration specifiers or '...' before 'Xil_AssertCallback'
+ void Xil_AssertSetCallback(Xil_AssertCallback Routine);
+                            ^~~~~~~~~~~~~~~~~~
+In file included from ../../cateen_bsp/ps7_cortexa9_0/include/hx711_zynq.h:8:0,
+                 from ../src/cateen.c:56:
+../../cateen_bsp/ps7_cortexa9_0/include/xstatus.h:517:13: error: storage class specified for parameter 'XStatus'
+ typedef s32 XStatus;
+             ^~~~~~~
+In file included from ../src/cateen.c:56:0:
+../../cateen_bsp/ps7_cortexa9_0/include/hx711_zynq.h:77:1: error: expected declaration specifiers before 'XStatus'
+ XStatus HX711_ZYNQ_Reg_SelfTest(void * baseaddr_p);
+ ^~~~~~~
+In file included from ../src/cateen.c:57:0:
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:146:3: error: storage class specified for parameter 'XGpio_Config'
+ } XGpio_Config;
+   ^~~~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:158:3: error: storage class specified for parameter 'XGpio'
+ } XGpio;
+   ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:168:22: error: expected declaration specifiers or '...' before 'XGpio'
+ int XGpio_Initialize(XGpio *InstancePtr, u16 DeviceId);
+                      ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:169:1: error: expected declaration specifiers before 'XGpio_Config'
+ XGpio_Config *XGpio_LookupConfig(u16 DeviceId);
+ ^~~~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:174:25: error: expected declaration specifiers or '...' before 'XGpio'
+ int XGpio_CfgInitialize(XGpio *InstancePtr, XGpio_Config * Config,
+                         ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:174:45: error: expected declaration specifiers or '...' before 'XGpio_Config'
+ int XGpio_CfgInitialize(XGpio *InstancePtr, XGpio_Config * Config,
+                                             ^~~~~~~~~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:176:29: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_SetDataDirection(XGpio *InstancePtr, unsigned Channel,
+                             ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:178:28: error: expected declaration specifiers or '...' before 'XGpio'
+ u32 XGpio_GetDataDirection(XGpio *InstancePtr, unsigned Channel);
+                            ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:179:24: error: expected declaration specifiers or '...' before 'XGpio'
+ u32 XGpio_DiscreteRead(XGpio *InstancePtr, unsigned Channel);
+                        ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:180:26: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_DiscreteWrite(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                          ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:186:24: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_DiscreteSet(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                        ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:187:26: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_DiscreteClear(XGpio *InstancePtr, unsigned Channel, u32 Mask);
+                          ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:192:20: error: expected declaration specifiers or '...' before 'XGpio'
+ int XGpio_SelfTest(XGpio *InstancePtr);
+                    ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:197:34: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_InterruptGlobalEnable(XGpio *InstancePtr);
+                                  ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:198:35: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_InterruptGlobalDisable(XGpio *InstancePtr);
+                                   ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:199:28: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_InterruptEnable(XGpio *InstancePtr, u32 Mask);
+                            ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:200:29: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_InterruptDisable(XGpio *InstancePtr, u32 Mask);
+                             ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:201:27: error: expected declaration specifiers or '...' before 'XGpio'
+ void XGpio_InterruptClear(XGpio *InstancePtr, u32 Mask);
+                           ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:202:31: error: expected declaration specifiers or '...' before 'XGpio'
+ u32 XGpio_InterruptGetEnabled(XGpio *InstancePtr);
+                               ^~~~~
+../../cateen_bsp/ps7_cortexa9_0/include/xgpio.h:203:30: error: expected declaration specifiers or '...' before 'XGpio'
+ u32 XGpio_InterruptGetStatus(XGpio *InstancePtr);
+                              ^~~~~
+../src/cateen.c:64:1: error: parameter 'data1' is initialized
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+ ^~~~~~~~
+../src/cateen.c:64:28: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                            ^~~~
+../src/cateen.c:64:28: note: (near initialization for 'data1')
+../src/cateen.c:64:34: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                  ^~~~
+../src/cateen.c:64:34: note: (near initialization for 'data1')
+../src/cateen.c:64:40: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                        ^~~~
+../src/cateen.c:64:40: note: (near initialization for 'data1')
+../src/cateen.c:64:46: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                              ^~~~
+../src/cateen.c:64:46: note: (near initialization for 'data1')
+../src/cateen.c:64:52: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                    ^~~~
+../src/cateen.c:64:52: note: (near initialization for 'data1')
+../src/cateen.c:64:58: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                          ^~~~
+../src/cateen.c:64:58: note: (near initialization for 'data1')
+../src/cateen.c:64:64: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                ^~~~
+../src/cateen.c:64:64: note: (near initialization for 'data1')
+../src/cateen.c:64:70: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                      ^~~~
+../src/cateen.c:64:70: note: (near initialization for 'data1')
+../src/cateen.c:64:76: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                            ^~~~
+../src/cateen.c:64:76: note: (near initialization for 'data1')
+../src/cateen.c:64:82: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                  ^~~~
+../src/cateen.c:64:82: note: (near initialization for 'data1')
+../src/cateen.c:64:88: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                        ^~~~
+../src/cateen.c:64:88: note: (near initialization for 'data1')
+../src/cateen.c:64:94: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                              ^~~~
+../src/cateen.c:64:94: note: (near initialization for 'data1')
+../src/cateen.c:64:100: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                                    ^~~~
+../src/cateen.c:64:100: note: (near initialization for 'data1')
+../src/cateen.c:64:106: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                                          ^~~~
+../src/cateen.c:64:106: note: (near initialization for 'data1')
+../src/cateen.c:64:112: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                                                ^~~~
+../src/cateen.c:64:112: note: (near initialization for 'data1')
+../src/cateen.c:64:118: warning: excess elements in scalar initializer
+ unsigned char data1[16] = {0x12, 0x34, 0x56, 0x78, 0xED, 0xCB, 0xA9, 0x87, 0x12, 0x34, 0x56, 0x78, 0x3c, 0xc3, 0x3c, 0xc3};
+                                                                                                                      ^~~~
+../src/cateen.c:64:118: note: (near initialization for 'data1')
+../src/cateen.c:65:1: error: parameter 'data2' is initialized
+ unsigned char data2[4] = {0, 0, 0, 0x01};
+ ^~~~~~~~
+../src/cateen.c:65:30: warning: excess elements in scalar initializer
+ unsigned char data2[4] = {0, 0, 0, 0x01};
+                              ^
+../src/cateen.c:65:30: note: (near initialization for 'data2')
+../src/cateen.c:65:33: warning: excess elements in scalar initializer
+ unsigned char data2[4] = {0, 0, 0, 0x01};
+                                 ^
+../src/cateen.c:65:33: note: (near initialization for 'data2')
+../src/cateen.c:65:36: warning: excess elements in scalar initializer
+ unsigned char data2[4] = {0, 0, 0, 0x01};
+                                    ^~~~
+../src/cateen.c:65:36: note: (near initialization for 'data2')
+../src/cateen.c:66:1: error: parameter 'DefaultKey' is initialized
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+ ^~~~~~~~
+../src/cateen.c:66:32: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+                                ^~~~
+../src/cateen.c:66:32: note: (near initialization for 'DefaultKey')
+../src/cateen.c:66:38: warning: excess elements in scalar initializer
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+                                      ^~~~
+../src/cateen.c:66:38: note: (near initialization for 'DefaultKey')
+../src/cateen.c:66:44: warning: excess elements in scalar initializer
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+                                            ^~~~
+../src/cateen.c:66:44: note: (near initialization for 'DefaultKey')
+../src/cateen.c:66:50: warning: excess elements in scalar initializer
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+                                                  ^~~~
+../src/cateen.c:66:50: note: (near initialization for 'DefaultKey')
+../src/cateen.c:66:56: warning: excess elements in scalar initializer
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+                                                        ^~~~
+../src/cateen.c:66:56: note: (near initialization for 'DefaultKey')
+../src/cateen.c:66:62: warning: excess elements in scalar initializer
+ unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+                                                              ^~~~
+../src/cateen.c:66:62: note: (near initialization for 'DefaultKey')
+../src/cateen.c:73:1: error: parameter 'Id' is initialized
+ unsigned char Id[20] = {0xE7, 0xED, 0x1E, 0xB2};
+ ^~~~~~~~
+../src/cateen.c:73:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ unsigned char Id[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                         ^~~~
+../src/cateen.c:73:25: note: (near initialization for 'Id')
+../src/cateen.c:73:31: warning: excess elements in scalar initializer
+ unsigned char Id[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                               ^~~~
+../src/cateen.c:73:31: note: (near initialization for 'Id')
+../src/cateen.c:73:37: warning: excess elements in scalar initializer
+ unsigned char Id[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                                     ^~~~
+../src/cateen.c:73:37: note: (near initialization for 'Id')
+../src/cateen.c:73:43: warning: excess elements in scalar initializer
+ unsigned char Id[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                                           ^~~~
+../src/cateen.c:73:43: note: (near initialization for 'Id')
+../src/cateen.c:75:1: error: parameter 'Id0' is initialized
+ unsigned char Id0[20] = {0xE7, 0xED, 0x1E, 0xB2};
+ ^~~~~~~~
+../src/cateen.c:75:26: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ unsigned char Id0[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                          ^~~~
+../src/cateen.c:75:26: note: (near initialization for 'Id0')
+../src/cateen.c:75:32: warning: excess elements in scalar initializer
+ unsigned char Id0[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                                ^~~~
+../src/cateen.c:75:32: note: (near initialization for 'Id0')
+../src/cateen.c:75:38: warning: excess elements in scalar initializer
+ unsigned char Id0[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                                      ^~~~
+../src/cateen.c:75:38: note: (near initialization for 'Id0')
+../src/cateen.c:75:44: warning: excess elements in scalar initializer
+ unsigned char Id0[20] = {0xE7, 0xED, 0x1E, 0xB2};
+                                            ^~~~
+../src/cateen.c:75:44: note: (near initialization for 'Id0')
+../src/cateen.c:76:1: error: parameter 'Price0' is initialized
+ unsigned int Price0 = 2;
+ ^~~~~~~~
+../src/cateen.c:77:1: error: parameter 'Addr0' is initialized
+ unsigned char Addr0[1] = {0x08};
+ ^~~~~~~~
+../src/cateen.c:77:27: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ unsigned char Addr0[1] = {0x08};
+                           ^~~~
+../src/cateen.c:77:27: note: (near initialization for 'Addr0')
+../src/cateen.c:81:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/cateen.c:86:1: error: expected declaration specifiers before 'XGpio'
+ XGpio miso, rst, mosi, sck, sda;
+ ^~~~~
+../src/cateen.c:91:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+../src/cateen.c:175:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ unsigned int get_gram(){
+                        ^
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: error: old-style parameter declarations in prototyped function definition
+ void dataGen(unsigned int dataI, unsigned char * dataO)
+      ^~~~~~~
+../src/cateen.c:185:1: error: expected '{' at end of input
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:04:51 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building file: ../src/mfrc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mfrc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mfrc522.d" -MT"src/mfrc522.o" -o "src/mfrc522.o" "../src/mfrc522.c"
+../src/mfrc522.c: In function 'PcdHalt':
+../src/mfrc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/mfrc522.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79440	   2736	  23440	 105616	  19c90	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:05:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79504	   2736	  23440	 105680	  19cd0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:06:52 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:109:19: warning: unused variable 'data_W' [-Wunused-variable]
+     unsigned char data_W[16];
+                   ^~~~~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79504	   2736	  23440	 105680	  19cd0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:07:43 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79504	   2736	  23440	 105680	  19cd0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:08:53 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79568	   2736	  23440	 105744	  19d10	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:09:18 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79568	   2736	  23440	 105744	  19d10	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:09:25 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79568	   2736	  23440	 105744	  19d10	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:10:01 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79632	   2736	  23440	 105808	  19d50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:10:41 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'dataGen':
+../src/cateen.c:195:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:10:50 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'dataGen':
+../src/cateen.c:195:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:10:52 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79632	   2736	  23440	 105808	  19d50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:10:56 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79632	   2736	  23440	 105808	  19d50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:11:13 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79632	   2736	  23440	 105808	  19d50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:11:36 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79696	   2736	  23440	 105872	  19d90	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:12:24 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79824	   2736	  23440	 106000	  19e10	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:12:33 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79824	   2736	  23440	 106000	  19e10	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:12:47 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:13:00 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:13:57 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c:188:6: error: conflicting types for 'dataGen'
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr) {
+      ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: previous declaration of 'dataGen' was here
+ void dataGen(unsigned int data_I, unsigned char * data_O);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:14:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:14:38 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char );
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:14:43 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:15:00 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+../src/cateen.c: At top level:
+../src/cateen.c:188:6: error: conflicting types for 'dataGen'
+ void dataGen(unsigned int data_I, unsigned char * data_O) {
+      ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: previous declaration of 'dataGen' was here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:15:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building file: ../src/mfrc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mfrc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mfrc522.d" -MT"src/mfrc522.o" -o "src/mfrc522.o" "../src/mfrc522.c"
+../src/mfrc522.c: In function 'PcdHalt':
+../src/mfrc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/mfrc522.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:15:21 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char);
+      ^~~~~~~
+../src/cateen.c: At top level:
+../src/cateen.c:188:6: error: conflicting types for 'dataGen'
+ void dataGen(unsigned int data_I, unsigned char * data_O) {
+      ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: previous declaration of 'dataGen' was here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:15:26 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+../src/cateen.c: At top level:
+../src/cateen.c:188:6: error: conflicting types for 'dataGen'
+ void dataGen(unsigned int data_I, unsigned char * data_O) {
+      ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: previous declaration of 'dataGen' was here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:15:41 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:13: error: too few arguments to function 'dataGen'
+             dataGen(get_gram(), data_W);
+             ^~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:19:6: note: declared here
+ void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr);
+      ^~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:16:22 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:164:41: error: expected expression before ')' token
+             dataGen(get_gram(), data_W, );
+                                         ^
+../src/cateen.c:110:19: warning: unused variable 'addr_W' [-Wunused-variable]
+     unsigned char addr_W;
+                   ^~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:16:33 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:164:13: warning: 'addr_W' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             dataGen(get_gram(), data_W, addr_W);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/cateen.c'
+' '
+'Building file: ../src/mfrc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mfrc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mfrc522.d" -MT"src/mfrc522.o" -o "src/mfrc522.o" "../src/mfrc522.c"
+../src/mfrc522.c: In function 'PcdHalt':
+../src/mfrc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/mfrc522.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:17:02 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:164:13: warning: 'addr_W' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             dataGen(get_gram(), data_W, addr_W);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:17:04 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:164:13: warning: 'addr_W' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             dataGen(get_gram(), data_W, addr_W);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:17:29 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:158:20: warning: 'addr_W' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             status = PcdAuthState(PICC_AUTHENT1A, addr_W, DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
+             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:17:37 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:158:20: warning: 'addr_W' may be used uninitialized in this function [-Wmaybe-uninitialized]
+             status = PcdAuthState(PICC_AUTHENT1A, addr_W, DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
+             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:17:50 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  79888	   2736	  23440	 106064	  19e50	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:18:38 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80032	   2736	  23440	 106208	  19ee0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:18:59 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80096	   2736	  23440	 106272	  19f20	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:19:07 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80032	   2736	  23440	 106208	  19ee0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:19:26 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80032	   2736	  23440	 106208	  19ee0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:19:31 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80032	   2736	  23440	 106208	  19ee0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:19:36 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80032	   2736	  23440	 106208	  19ee0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:23:19 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80256	   2736	  23440	 106432	  19fc0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:23:44 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:24:01 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:25:54 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:27:17 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80336	   2736	  23440	 106512	  1a010	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:27:28 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80360	   2736	  23440	 106536	  1a028	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:27:32 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:28:15 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80376	   2736	  23440	 106552	  1a038	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:28:18 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:29:18 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:29:18 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:29:28 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:32:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80376	   2736	  23440	 106552	  1a038	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:32:13 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80376	   2736	  23440	 106552	  1a038	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:32:17 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:32:58 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:33:33 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80376	   2736	  23440	 106552	  1a038	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:33:36 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:34:58 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80392	   2736	  23440	 106568	  1a048	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:35:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80416	   2736	  23440	 106592	  1a060	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:35:29 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80448	   2736	  23440	 106624	  1a080	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:35:32 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:36:22 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80448	   2736	  23440	 106624	  1a080	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:36:37 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:37:38 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:195:15: warning: variable 'gram' set but not used [-Wunused-but-set-variable]
+  unsigned int gram;
+               ^~~~
+../src/cateen.c: At top level:
+../src/cateen.c:204:9: error: expected declaration specifiers or '...' before string constant
+  printf("end getting gram ");
+         ^~~~~~~~~~~~~~~~~~~
+../src/cateen.c:206:2: error: expected identifier or '(' before 'return'
+  return gram - gram_start;
+  ^~~~~~
+../src/cateen.c:207:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:203:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:38:00 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80384	   2736	  23440	 106560	  1a040	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:38:22 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80384	   2736	  23440	 106560	  1a040	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:38:36 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:41:10 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c:194:5: error: conflicting types for 'get_gram'
+ int get_gram(unsigned int * gram) {
+     ^~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:17:14: note: previous declaration of 'get_gram' was here
+ unsigned int get_gram();
+              ^~~~~~~~
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:197:7: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  gram = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
+       ^
+../src/cateen.c:201:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:41:35 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:162:17: error: too few arguments to function 'get_gram'
+         dataGen(get_gram(), data_W, addr_W);
+                 ^~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:17:5: note: declared here
+ int get_gram(unsigned int * gram);
+     ^~~~~~~~
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:197:7: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+  gram = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
+       ^
+../src/cateen.c:201:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:42:54 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:162:17: error: too few arguments to function 'get_gram'
+         dataGen(get_gram(), data_W, addr_W);
+                 ^~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:17:5: note: declared here
+ int get_gram(unsigned int * gram);
+     ^~~~~~~~
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:202:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:43:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:162:17: error: too few arguments to function 'get_gram'
+         dataGen(get_gram(), data_W, addr_W);
+                 ^~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:17:5: note: declared here
+ int get_gram(unsigned int * gram);
+     ^~~~~~~~
+../src/cateen.c: In function 'get_gram':
+../src/cateen.c:204:1: error: expected ';' before '}' token
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:43:14 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:162:17: error: too few arguments to function 'get_gram'
+         dataGen(get_gram(), data_W, addr_W);
+                 ^~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:17:5: note: declared here
+ int get_gram(unsigned int * gram);
+     ^~~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:43:25 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:162:26: error: 'gram' undeclared (first use in this function)
+         dataGen(get_gram(gram), data_W, addr_W);
+                          ^~~~
+../src/cateen.c:162:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:43:44 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building file: ../src/mfrc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mfrc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mfrc522.d" -MT"src/mfrc522.o" -o "src/mfrc522.o" "../src/mfrc522.c"
+../src/mfrc522.c: In function 'PcdHalt':
+../src/mfrc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/mfrc522.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80512	   2736	  23456	 106704	  1a0d0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:43:48 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:45:48 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80512	   2736	  23456	 106704	  1a0d0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:46:05 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:46:29 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:48:24 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80528	   2736	  23456	 106720	  1a0e0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:48:27 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:50:11 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'dataGen':
+../src/cateen.c:228:7: error: 'i' undeclared (first use in this function)
+  for (i = 0; i < 16; i++)
+       ^
+../src/cateen.c:228:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:50:22 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80592	   2736	  23456	 106784	  1a120	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:50:27 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:51:05 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80552	   2736	  23456	 106744	  1a0f8	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:52:04 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80552	   2736	  23456	 106744	  1a0f8	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:52:07 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:53:31 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80552	   2736	  23456	 106744	  1a0f8	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:53:35 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:54:05 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80584	   2736	  23456	 106776	  1a118	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:54:07 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+20:54:49 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80584	   2736	  23456	 106776	  1a118	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:55:02 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:163:9: error: too few arguments to function 'get_gram'
+         get_gram();
+         ^~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:17:5: note: declared here
+ int get_gram(unsigned int * gram);
+     ^~~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+20:55:08 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  80584	   2736	  23456	 106776	  1a118	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+20:55:13 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:02:11 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.

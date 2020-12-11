@@ -82,7 +82,8 @@ void delay1(unsigned int z)
 	usleep(z * 10);
 }
 
-unsigned int gram, gram_start;
+unsigned int gram_start;
+unsigned int *gram;
 XGpio miso, rst, mosi, sck, sda;
 unsigned char g_ucTempbuf[20];
 
@@ -104,362 +105,132 @@ int main()
 
     print("Hello World\n\r");
 
-
     gram_start = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
 
+    unsigned char data_W[16];
+    unsigned char addr_W = 0x04;
     unsigned char status, i;
     unsigned int temp;
-    unsigned int flag;
-    struct Card card1;
-    struct Card_Func card_func1;
-
-    Pcd_Init();
+    PcdReset();
+    PcdAntennaOff();
+    PcdAntennaOn();
     while (1)
     {
-      //status = PcdRequest(PICC_REQALL, g_ucTempbuf); //Ñ°¿¨
-      //if (status != MI_OK) //initial
-      //{
-      //    Pcd_Init();
-      //    continue;
-      //}
 
-      //printf("\nType is :");
-      //for (i = 0; i < 2; i++)
-      //{
-      //    temp = g_ucTempbuf[i];
-      //    printf("%X", temp);
-      //}
-
-      //status = PcdAnticoll(g_ucTempbuf); //·À³å×²
-      //if (status != MI_OK)
-      //{
-      //    continue;
-      //}
-
-      //////////ÒÔÏÂÎª³¬¼¶ÖÕ¶Ë´òÓ¡³öµÄÄÚÈÝ////////////////////////
-
-      //if(strcmp(g_ucTempbuf, Id0)==0){
-      //	printf("\nID is correct !");
-      //}
-      //else{
-      //	printf("\nNot right card !");
-      //}
-
-      //printf("\nId is :\n"); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
-      //for (i = 0; i < 4; i++)
-      //{
-      //    temp = g_ucTempbuf[i];
-      //    printf("%X", temp);
-      //}
-      //printf("\n");
-      //for (i = 0; i < 4; i++)
-      //{
-      //   temp = Id0[i];
-      //    printf("%X", temp);
-      //}
-
-            ///////////////////////////////////////////////////////////
-        flag = Pcd_Sel(g_ucTempbuf);
-        if(flag == 0){
+        status = PcdRequest(PICC_REQALL, g_ucTempbuf);
+        if (status != MI_OK) //initial
+        {
+            PcdReset();
+            PcdAntennaOff();
+            PcdAntennaOn();
             continue;
         }
-    
-        //volatile u32 *LocalAddr = (volatile u32 *)XPAR_GPIO_0_BASEADDR;
-        //*LocalAddr = 1;
 
-        //printf("\nBegin to choose %c",status);
-        //status = PcdSelect(g_ucTempbuf); //Ñ¡¶¨¿¨Æ¬
-        //if (status != MI_OK)
-        //{
-        //    continue;
-        //}
-        //print("Card locked");
-
-        printf("Begin to lock\n");        
-        card_func1 = Pcd_SetValue(g_ucTempbuf, card1);
-        flag = card_func1.op;
-        card1 = card_func1.card;
-        if(flag == 0){
+        status = PcdAnticoll(g_ucTempbuf);
+        if (status != MI_OK)
+        {
+        	printf("Anticol failed! ");
             continue;
-        }    
+        }
 
-        delay1(100);
-        delay1(100);
-        delay1(200);
-        PcdHalt();
-      //Print_Char(card1.Data, 16);
-      //status = PcdAuthState(PICC_AUTHENT1A, 60, DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
-      //if (status != MI_OK)
-      //{
-      //    continue;
-      //}
+        ////////////////////////////////
 
-      //status = PcdWrite(60, card1.Data); //Ð´¿é
-      //if (status != MI_OK)
-      //{
-      //    continue;
-      //}
-      //while (1)
-      //{
-      //    status = PcdRequest(PICC_REQALL, g_ucTempbuf); //Ñ°¿¨
-      //    if (status != MI_OK)
-      //    {
-      //        //PcdReset();
-      //        //PcdAntennaOff();
-      //        //PcdAntennaOn();
-      //        Pcd_Init();
-      //        continue;
-      //    }
-      //    status = PcdAnticoll(g_ucTempbuf); //·À³å×²
-      //    if (status != MI_OK)
-      //    {
-      //        continue;
-      //    }
-      //    status = PcdSelect(g_ucTempbuf); //Ñ¡¶¨¿¨Æ¬
-      //    if (status != MI_OK)
-      //    {
-      //        continue;
-      //    }
+        printf("The ID : "); //
+        for (i = 0; i < 4; i++)
+        {
+            temp = g_ucTempbuf[i];
+            printf("%X", temp);
+        }
 
-      //    //flag = Pcd_Sel(g_ucTempbuf);
-      //    //if(flag == 0){
-      //    //    continue;
-      //    //}
+        printf("\n");
+        ///////////////////////////////////////////////////////////
 
-      //    status = PcdAuthState(PICC_AUTHENT1A, (char)Addr0[0], DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
-      //    if (status != MI_OK)
-      //    {
-      //        continue;
-      //    }
+        status = PcdSelect(g_ucTempbuf); //Ñ¡¶¨¿¨Æ¬
+        if (status != MI_OK)
+        {
+        	printf("Select failed! ");
+            continue;
+        }
 
-      //    status = PcdValue(PICC_DECREMENT, (char)Addr0[0], data2); //¿Û¿î
-      //    if (status != MI_OK)
-      //    {
-      //        continue;
-      //    }
+        status = PcdAuthState(PICC_AUTHENT1A, addr_W, DefaultKey, g_ucTempbuf); //ÑéÖ¤¿¨Æ¬ÃÜÂë
+        if (status != MI_OK)
+        {
+        	printf("AuthState failed! ");
+            continue;
+        }
 
-      //    status = PcdBakValue((char)Addr0[0], (char)Addr0[0]+1); //¿é±¸·Ý
-      //    if (status != MI_OK)
-      //    {
-      //        continue;
-      //    }
 
-      //    status = PcdRead((char)Addr0[0]+1, g_ucTempbuf); //¶Á¿é
-      //    if (status != MI_OK)
-      //    {
-      //        continue;
-      //    }
-      //    printf("\nread card: "); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
-      //    for (i = 0; i < 16; i++)
-      //    {
-      //        temp = g_ucTempbuf[i];
-      //        printf("%X", temp);
-      //    }
+        get_gram(gram);
+        dataGen(*gram, data_W, addr_W);
+        status = PcdWrite(addr_W, data_W); //Ð´¿é
+        if (status != MI_OK)
+        {
+        	printf("Write failed! ");
+            continue;
+        }
 
-      //    print("\n");
-      //    //	    for(i=0;i<250;i++)//ÏÈÊä³öÒ»ÖÖÆµÂÊµÄÉùÒô
-      //    //        {
-      //    //         for(j=0;j<80;j++);
-      //    //         Speaker=~Speaker;
-      //    //       }
-      //    delay1(100);
-      //    delay1(100);
-      //    delay1(200);
-      //    PcdHalt();
-      //}
+        status = PcdRead(addr_W, g_ucTempbuf); //¶Á¿é
+        if (status != MI_OK)
+        {
+        	printf("Read failed! ");
+            continue;
+        }
+        printf("The value : "); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
+        for (i = 0; i < 16; i++)
+        {
+            temp = g_ucTempbuf[i];
+            printf("%X", temp);
+        }
+        
+//        if (status != MI_OK)
+//        {
+//            break;
+//        }
     }
-
-
-
-
-
     cleanup_platform();
     return 0;
 }
 
 
 
-signed int get_gram(){
-	gram   = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
-	return gram - gram_start;
-}
+int get_gram(unsigned int * gram) {
 
-
-void Pcd_Init(){
-    PcdReset();
-    PcdAntennaOff();
-    PcdAntennaOn();
-}
-
-int Pcd_Sel(unsigned char buffer[]){
-    unsigned char state,cal;
-    unsigned int temper;
-    //finding cards
-    state = PcdRequest(PICC_REQALL, buffer);
-    if (state != MI_OK) //initial
-    {
-        Pcd_Init();
-        return 0;
-    }
-    //get ID and check
-    state = PcdAnticoll(buffer);
-    if (state != MI_OK)
-    {
-        return 0;
-    }
-    //printf("Id is :\n");
-    //for (cal = 0; cal < 20; cal++)
-    //{
-    //    temper = buffer[cal];
-    //    printf("%X", temper);
-    //}
-    //printf("\nMy Id is :\n");
-    //for (cal = 0; cal < 20; cal++)
-    //{
-    //    temper = Id0[cal];
-    //    printf("%X", temper);
-    //}
-    if(strcmp(buffer, Id0)!=0){
-        printf("Not right card !\n");
-        return 0;
-    }
-    state = PcdSelect(buffer);
-    if (state != MI_OK)
-    {
-        return 0;
-    }
-    printf("\ncard locked\n");
-
-    return 1;
-}
-
-struct Card_Func Pcd_SetValue(unsigned char buffer[], struct Card card){
-    unsigned char state, cal;
-    unsigned int temper;
-    struct Card_Func Operaotr;
-
-    state = PcdAuthState(PICC_AUTHENT1A, (char)Addr0[0], DefaultKey, buffer);
-    if (state != MI_OK)
-    {
-        Operaotr.op = 0;
-    }
-    printf("card auth\n");
-    //generate data to write
-    //gram = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET);
-    //if((gram - gram_start)>10){
-    //    Card_SetData(card, gram-gram_start, Addr0[1]);
-    //}
-    //else{
-    //    return 0;
-    //}
-    Operaotr.card = Card_SetData(card, 1000, Addr0);
-    //write data
-    state = PcdWrite((char)Addr0[0], Operaotr.card.Data); //Ð´¿é
-    if (state != MI_OK)
-    {
-        Operaotr.op = 0;
-    }
-    printf("write done");
-    //read data
-    state = PcdRead((char)Addr0[0]+1, buffer);
-    if (state != MI_OK)
-    {
-        Operaotr.op = 0;
-    }
-    printf("\nread card: "); //³¬¼¶ÖÕ¶ËÏÔÊ¾,
-    for (cal = 0; cal < 16; cal++)
-    {
-        temper = buffer[cal];
-        printf("%X", temper);
-    }
-    printf("\n");
-    for (cal = 0; cal < 20; cal++)
-    {
-        buffer[cal] = 0;
-    }
-    Operaotr.op = 1;
-
-    return Operaotr;
-}
-
-
-void Card_Update(struct Card * card){
-	unsigned char num;
-	for (num = 0; num < 4; num++){
-		card->Data[num] = card->Data_info[num];
-        //printf("%X", card.Data[num]);
-	}
-    //printf("\n");
-	for (num = 0; num < 4; num++){
-		card->Data[num+4] = ~card->Data_info[num];
-        //printf("%X", card.Data[num+4]);
-	}
-    //printf("\n");
-	for (num = 0; num < 4; num++){
-		card->Data[num+8] = card->Data_info[num];
-        //printf("%X", card.Data[num+8]);
-	}
-    //printf("\n");
-	card->Data[12] = card->Data_Addr[0];
-	card->Data[13] = ~card->Data_Addr[0];
-	card->Data[14] = card->Data_Addr[0];
-	card->Data[15] = ~card->Data_Addr[0];
-	for (num = 0; num < 4; num++){
-        //printf("%X", card.Data[num+12]);
-	}
-    //printf("\n");
-    //printf("function inner:\n");
-    //Print_Char(card.Data, 16);
-}
-
-struct Card Card_SetData(struct Card card, unsigned int data_input, unsigned char address_input[]){
-    unsigned char char_input[4];
-    char_input[0] = 0;
-    char_input[1] = 0;
-    char_input[2] = data_input / 256;
-    char_input[3] = data_input % 256;
-
-	unsigned char num;
-	//strcpy(card.Data_info, char_input);
-	//strcpy(card.Data_Addr, address_input);
-    for (num = 0; num < 4; num++){
-		card.Data_info[num] = char_input[num];
-	}
-	for (num = 0; num < 1; num++){
-		card.Data_Addr[num] = address_input[num];
+	*gram = HX711_ZYNQ_mReadReg(XPAR_HX711_ZYNQ_0_S00_AXI_BASEADDR,HX711_ZYNQ_S00_AXI_SLV_REG2_OFFSET) - gram_start;
+	if ( *gram > 10 && *gram < 5000) {
+		printf("\n The gram is %X \n", *gram);
+		return 1;
 	}
 
-//	card = Card_Update(card);
-    
-    //printf("function outer:\n");
-    //Print_Char(card.Data_info, 4);
-    //Print_Char(card.Data_Addr, 1);
-    //Print_Char(card.Data, 16);
-
-    return card;
-
+	return 0;
 }
 
-void Card_SetSel(struct Card card, int bit){
-	card.Flag_Sel = bit;
+void dataGen(unsigned int data_I, unsigned char * data_O, unsigned char addr) {
+	printf("\n The data input is %X \n", data_I);
+	*(data_O + 0) = 0;
+	*(data_O + 1) = 0;
+	*(data_O + 2) = data_I / 256;
+	*(data_O + 3) = data_I % 256;
+
+	*(data_O + 4) = ~ *(data_O + 0);
+	*(data_O + 5) = ~ *(data_O + 1);
+	*(data_O + 6) = ~ *(data_O + 2);
+	*(data_O + 7) = ~ *(data_O + 3);
+
+	*(data_O + 8) = *(data_O + 0);
+	*(data_O + 9) = *(data_O + 1);
+	*(data_O + 10) = *(data_O + 2);
+	*(data_O + 11) = *(data_O + 3);
+
+	*(data_O + 12) = addr;
+	*(data_O + 13) = ~ addr;
+	*(data_O + 14) = addr;
+	*(data_O + 15) = ~ addr;
+	printf("\n");
+	for (int i = 0; i < 16; i++)
+	        {
+	            printf("%X", *(data_O + i));
+	        }
+	printf("\n");
 }
 
-void Card_SetPorM(struct Card card, int bit){
-	card.Flag_PorM = bit;
-}
 
-void Card_SetDone(struct Card card, int bit){
-	card.Flag_Done = bit;
-}
-
-void Print_Char(unsigned char buffer[], unsigned int num){
-    unsigned char i;
-    unsigned int te;
-    printf("\n");
-    for (i = 0; i < num; i++)
-    {
-        te = buffer[i];
-        printf("%X", te);
-    }
-    printf("\n");
-}
