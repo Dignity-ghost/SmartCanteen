@@ -14658,3 +14658,870 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for 'main-build'.
+16:55:58 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:310:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:310:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81536	   2736	  23456	 107728	  1a4d0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+16:56:00 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:57:53 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81744	   2736	  23456	 107936	  1a5a0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+16:57:54 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+16:59:34 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81744	   2736	  23456	 107936	  1a5a0	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+16:59:37 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:02:18 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81600	   2736	  23456	 107792	  1a510	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+17:02:20 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:03:41 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:04:27 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81600	   2736	  23456	 107792	  1a510	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+17:04:30 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+17:04:45 **** Incremental Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+19:36:55 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: At top level:
+../src/cateen.c:386:13: error: conflicting types for 'Card_Update'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:38:13: note: previous declaration of 'Card_Update' was here
+ struct Card Card_Update(struct Card);
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:38:35 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: At top level:
+../src/cateen.c:386:13: error: conflicting types for 'Card_Update'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:38:13: note: previous declaration of 'Card_Update' was here
+ struct Card Card_Update(struct Card);
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:39:00 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:39:35 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:41:44 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:42:04 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:42:12 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: At top level:
+../src/cateen.c:386:13: error: conflicting types for 'Card_Update'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+In file included from ../src/cateen.c:52:0:
+../src/cateen.h:38:6: note: previous declaration of 'Card_Update' was here
+ void Card_Update(struct Card *card);
+      ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:414:12: error: incompatible types when returning type 'struct Card *' but 'struct Card' was expected
+     return card;
+            ^~~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:435:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:13: note: expected 'struct Card *' but argument is of type 'struct Card'
+ struct Card Card_Update(struct Card * card){
+             ^~~~~~~~~~~
+../src/cateen.c: In function 'Card_Update':
+../src/cateen.c:416:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:42:23 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+../src/cateen.c: In function 'Card_SetData':
+../src/cateen.c:432:21: error: incompatible type for argument 1 of 'Card_Update'
+  card = Card_Update(card);
+                     ^~~~
+../src/cateen.c:386:6: note: expected 'struct Card *' but argument is of type 'struct Card'
+ void Card_Update(struct Card * card){
+      ^~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/cateen.o] Error 1
+19:42:34 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building file: ../src/mfrc522.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mfrc522.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mfrc522.d" -MT"src/mfrc522.o" -o "src/mfrc522.o" "../src/mfrc522.c"
+../src/mfrc522.c: In function 'PcdHalt':
+../src/mfrc522.c:338:10: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     char status;
+          ^~~~~~
+'Finished building: ../src/mfrc522.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81472	   2736	  23456	 107664	  1a490	cateen.elf
+'Finished building: cateen.elf.size'
+' '
+19:45:47 **** Auto Build of configuration Debug for project cateen ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81472	   2736	  23456	 107664	  1a490	cateen.elf
+'Finished building: cateen.elf.size'
+' '

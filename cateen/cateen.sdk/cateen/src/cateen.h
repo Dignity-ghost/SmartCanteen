@@ -35,7 +35,7 @@ int Pcd_Sel(unsigned char []);
 struct Card_Func Pcd_SetValue(unsigned char [],struct Card);
 
 signed int get_gram();
-struct Card Card_Update(struct Card);
+void Card_Update(struct Card *card);
 struct Card Card_SetData(struct Card, unsigned int, unsigned char []);
 void Card_SetSel(struct Card, int);
 void Card_SetPorM(struct Card, int);

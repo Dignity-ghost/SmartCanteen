@@ -1,8 +1,56 @@
-16:51:37 **** Incremental Build of configuration Debug for project cateen ****
+19:45:47 **** Auto Build of configuration Debug for project cateen ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: Nothing to be done for 'main-build'.
+'Building file: ../src/cateen.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/cateen.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../cateen_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/cateen.d" -MT"src/cateen.o" -o "src/cateen.o" "../src/cateen.c"
+../src/cateen.c: In function 'main':
+../src/cateen.c:111:18: warning: unused variable 'temp' [-Wunused-variable]
+     unsigned int temp;
+                  ^~~~
+../src/cateen.c:110:27: warning: unused variable 'i' [-Wunused-variable]
+     unsigned char status, i;
+                           ^
+../src/cateen.c:110:19: warning: unused variable 'status' [-Wunused-variable]
+     unsigned char status, i;
+                   ^~~~~~
+../src/cateen.c: In function 'Pcd_Sel':
+../src/cateen.c:322:15: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+               ^~~~~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:322:23: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+     if(strcmp(buffer, Id0)!=0){
+                       ^~~
+In file included from e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\stdio.h:29:0,
+                 from ../src/cateen.c:48:
+e:\software\vivado2018\sdk\2018.3\gnu\aarch32\nt\gcc-arm-none-eabi\arm-none-eabi\libc\usr\include\string.h:28:6: note: expected 'const char *' but argument is of type 'unsigned char *'
+ int  _EXFUN(strcmp,(const char *, const char *));
+      ^
+../src/cateen.c:296:18: warning: unused variable 'temper' [-Wunused-variable]
+     unsigned int temper;
+                  ^~~~~~
+../src/cateen.c:295:25: warning: unused variable 'cal' [-Wunused-variable]
+     unsigned char state,cal;
+                         ^~~
+'Finished building: ../src/cateen.c'
+' '
+'Building target: cateen.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../cateen_bsp/ps7_cortexa9_0/lib -o "cateen.elf"  ./src/cateen.o ./src/mfrc522.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: cateen.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size cateen.elf  |tee "cateen.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81472	   2736	  23456	 107664	  1a490	cateen.elf
+'Finished building: cateen.elf.size'
+' '
 
-16:51:37 Build Finished (took 203ms)
+19:45:48 Build Finished (took 1s.62ms)
 
